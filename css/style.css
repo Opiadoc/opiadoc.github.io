@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@import url("reset.css");
+@import url("desktop-xl.css");
+@import url("desktop.css");
+@import url("tablet.css");
+@import url("mobile.css");
+
+.owl-dots {
+   text-align: center;
+   position: fixed;
+   bottom: 5px;
+   width: 100%;
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+.row{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+.rowx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.owl-dot {
+   border-radius: 50px;
+   height: 10px;
+   width: 10px;
+   display: inline-block;
+   background: rgba(127,127,127, 0.5);
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.owl-dot.active {
+   background: rgba(127,127,127, 1);
+}
+
+body{
+  min-width: 1200px;
+}
+/* Шапка */
+.wrapperHead{
+  height: 100vh;
+  background-image: url(../img/bgHead.jpg);
+  background-size: cover;
+}
+.headSection{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.headSection h1{
+  font-size: 72px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+.headSection p{
+  weight: 500;
+  font-size: 24px;
+  line-height: 3;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+
+/*Кто мы? */
+.wrapperWhite{
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+.sectionWho{
+  flex-direction: column;
+  align-items: center;
+}
+.sectionWho h2{
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 43px;
+  background-color: black;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: white;
+  transform: translateY(50%);
+}
+.whoPar{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.whoPar p{
+  font-family: 'Roboto', sans-serif;
+}
+#whoMain{
+  font-size: 26px;
+  line-height: 1.35;
+}
+#whoSide{
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 300;
+}
+
+
+
+/* Перебивка черная */
+.wrapperBlack{
+  padding: 150px 0px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.wrapperBlack h1{
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 64px;
+  line-height: 1.23;
+  font-weight: 700;
+}
+.wrapperBlack h2{
+  margin: -70px 0px;
+  width: 560px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.55;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* Результаты года */
+.wrapperResults{
+  padding: 150px 0;
+}
+.sectionResults{
+  justify-content: space-between;
+}
+.resultsCard{
+  width: 260px;
+}
+.resultsCard h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+.resultsCard p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.lineBlack{
+  width: 100%;
+  height: 25px;
+  border-bottom: 2px solid black;
+  margin-bottom: 25px;
+}
+
+
+/* Показы */
+  .sectionScreenings{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+  }
+  .sectionScreeningsImage{
+    display: inline-block;
+    width: 560px;
+    height: 808px;
+    background-size: cover;
+    margin-left: 50px;
+  }
+  #sonMu{
+    background-image: url(../img/sonMu.jpg);
+  }
+  #doneck{
+    background-image: url(../img/doneck.jpg);
+  }
+  #work{
+    background-image: url(../img/work.jpg);
+  }
+  #after{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #after a{
+    color: #ff8562;
+    text-decoration: none;
+  }
+  #perm{
+    background-image: url(../img/perm.jpg);
+  }
+  #tears{
+    background-image: url(../img/tears.jpg);
+  }
+  #dreamers{
+    background-image: url(../img/dreamers.jpg);
+  }
+  #war{
+    background-image: url(../img/war.jpg);
+  }
+  #power{
+    background-image: url(../img/power.jpg);
+  }
+  .screeningsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+  }
+  .screeningsText h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.55;
+    margin-bottom: 30px;
+  }
+  .screeningsText p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.55;
+    margin-bottom: 60px;
+  }
+  .wrapperPhotos{
+    width: 100vw;
+    padding: 50px 0;
+    background-color: #171717;
+  }
+
+
+
+/* Отзывы о Опии */
+.wrapperComments{
+  padding-top: 80px;
+}
+.sectionComments{
+  flex-flow: column;
+  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 100px;
+}
+.sectionComments svg{
+  transform: translateX(-1650%);
+  margin-bottom: 50px;
+}
+.commentsBlock{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.commentsBlock_text{
+  width: 70%;
+}
+.commentsBlock_text p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.commentsBlock_author {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+.commentsBlock_author img{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.commentsBlock_author h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.commentsBlock_author p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 6px;
+  text-align: center;
+}
+
+
+
+/*  Футер */
+.wrapperFooter{
+  padding-top: 50px;
+}
+.sectionFooter{
+  flex-direction: column;
+  align-items: center;
+}
+.sectionFooter img{
+  width: 560px;
+  transform: translateX(1%);
+}
+.sectionFooter p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 300;
+  text-align: center;
+}
+.footerSocial{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.footerSocial svg{
+  margin: 40px 5px;
+}

@@ -1,0 +1,11 @@
+.row{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+.rowx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
