@@ -1,10 +1,35 @@
-@media (min-width: 1024px) and (max-width: 1367px){
+@media (min-width: 1024px) and (max-width: 1199px){
   .rowMy{
     max-width: 1024px;
   }
   .rowx{
     min-width: 1024px;
     width: 100vw;
+  }
+  .sectionMenu a{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  .sectionMenu a:hover{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  .sectionMenu a:visited{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  .sectionMenu a:active{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
   }
   .headSection h1{
     font-size: 72px;
@@ -30,6 +55,29 @@
     line-height: 1.35;
     font-weight: 300;
   }
+  .wrapperBlack{
+    padding: 150px 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapperBlack h1{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 64px;
+    line-height: 1.23;
+    font-weight: 700;
+  }
+  .wrapperBlack h2{
+    margin: -70px 0px;
+    width: 560px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.55;
+    color: white;
+    text-align: center;
+  }
   .resultsCard{
     width: 220px;
   }
@@ -45,6 +93,12 @@
     justify-content: space-between;
     padding: 100px 0px;
     align-items: center;
+  }
+  .mobileScreening{
+    display: none;
+  }
+  .mobileGallery{
+    display: none;
   }
   .sectionScreeningsImage{
     width: 40%;
@@ -87,5 +141,23 @@
     line-height: 1.55;
     font-weight: 300;
     text-align: center;
+  }
+  .sectionGallery{
+    padding: 100px 0px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sliderElement{
+    width: 200px;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+  }
+  .sliderElement img{
+    width: 1024px;
+    height: 700px;
   }
 }

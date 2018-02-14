@@ -8,6 +8,31 @@
     flex-wrap: wrap;
     max-width: 90%;
   }
+  .sectionMenu a{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+  }
+  .sectionMenu a:hover{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  .sectionMenu a:visited{
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  .sectionMenu a:active{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
   .headSection h1{
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -22,6 +47,21 @@
     font-family: 'Roboto', sans-serif;
     color: white;
   }
+  .carousel{
+    display: none;
+  }
+  .mobileGallery{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobileGallery img{
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 40px;
+  }
   #whoMain{
     font-size: 18px;
   }
@@ -29,6 +69,29 @@
     margin-bottom: 30px;
     font-weight: 300;
     font-size: 16px;
+  }
+  .wrapperBlack{
+    padding: 50px 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapperBlack h1{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 1.23;
+    font-weight: 700;
+  }
+  .wrapperBlack h2{
+    padding: 0 20px;
+    width: 560px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    color: white;
+    text-align: center;
   }
   .resultsCard{
     width: 100%;
@@ -90,5 +153,24 @@
     line-height: 1.55;
     font-weight: 300;
     text-align: center;
+  }
+  .sectionGallery{
+    padding: 100px 0px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sliderElement{
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+  }
+  .sliderElement img{
+    width: 300px;
+    height: 300px;
   }
 }

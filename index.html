@@ -19,7 +19,9 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <title>OPIA doc</title>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <title>OPIA DOC HSE</title>
 </head>
 <body>
   <div class="wrapperMenu">
@@ -32,7 +34,7 @@
     </div>
   </div>
   <div class="wrapperHead">
-    <div class="rowMy headSection">
+    <div class="rowMy headSection" data-aos="fade-down">
        <h1>КЛУБ<br>ДОКУМЕНТАЛЬНОГО<br>КИНО OPIA</h1>
         <p>Отчет, 2017</p>
     </div>
@@ -54,7 +56,7 @@
     <h1>2017</h1>
   </div>
   <div class="wrapperResults">
-    <div class="rowMy sectionResults">
+    <div class="rowMy sectionResults" data-aos="fade-up">
       <div class="resultsCard">
         <h2>8 фильмов</h2>
         <div class="lineBlack"></div>
@@ -88,7 +90,7 @@
   <div id="screenings" class="wrapperBlack">
     <h1>Показы</h1>
   </div>
-  <div class="wrapperScreenings">
+  <div class="wrapperScreenings" data-aos="fade-up">
     <!-- <div class="rowMy screeninigsControls">
       <div class="controlsPrev"></div>
       <div class="controlsNext"></div>
@@ -107,90 +109,8 @@
             <li data-target="#demo" data-slide-to="7"></li>
           </ul>
           <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Сон Му — это я» , США, 2015<br>Режиссер: Адам Хьёберг </h2>
-                      <p>«Сон Му — это я» — документальный фильм о северокорейском художнике, который работал в отделе пропаганды Корейской народной армии, но потом бежал из родной страны в Китай. </p>
-                      <p>Нашим специальный гостем был Алексей Кириллович Симонов — советский и российский писатель и кинорежиссер. </p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="sonMu"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Аэропорт Донецк», Чехия, 2015<br>Режиссер: Андрей Ерастов </h2>
-                      <p>Фильм Ерастова рассказывает о военных действиях в аэропорту столицы Донбасса и показывает конфликт по обе стороны баррикад. </p>
-                      <h2>«Два детства», Россия, 2015<br>Режиссер: Владимир Головнёв</h2>
-                      <p>Фильм-наблюдение Головнёва рассказывает о природе ложного патриотизма. Главные герои картины — старшеклассники в преддверии праздника Победы.</p>
-                      <p>В обсуждении участвовал режиссер Андрей Ерастов. Он вышел с нами на связь по скайпу и ответил на вопросы аудитории о съемках в горячей точке.</p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="doneck"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Чужая работа», Россия, 2015 <br>Режиссер: Денис Шабаев</h2>
-                      <p>Главный герой фильма — гастарбайтер из Таджикистана, Фаррух. Он мечтает стать актёром. Чтобы заработать на жизнь себе и своей семье, он рискует потерять практически всё и остаться в большой негостеприимной Москве на грани нищеты.</p>
-                      <p>После просмотра состоялась встреча с режиссером фильма Денисом Шабаевым. </p>
-                      <p id="after">Коллеги из FSSNews написали <a href="https://www.fsshsenews.com/single-post/2017/05/29/">отзыв и взяли интервью</a> у Дениса Шабаева.</p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="work"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Пермь-36. Отражение», Россия, 2016 <br>Режиссер: Сергей Качкин</h2>
-                      <p>Картина Качкина рассказывает о политических репрессиях в СССР. В центре повествования — три бывших политзаключенных, сама исправительно-трудовая колония Пермь-36 (ныне музей) и гражданский форум «Пилорама». </p>
-                      <p>После просмотра фильма Сергей Качкин рассказал зрителям о съемках и ответил на вопросы. </p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="perm"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Нестихийное бедствие Китая: Слезы провинции Сычуань», США, 2009 <br>Режиссер: Джон Алперт </h2>
-                      <p>В фильме рассказывается о землетрясении в Китае в 2008 году. Бедствие унесло жизни 70 000 человек, каждый седьмой из которых был ребёнком. В тот год тысячи семей потеряли своих единственных детей.  </p>
-                      <p>После показа прошла дискуссия с режиссёром фильма Джоном Алпертом. </p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="tears"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Сила мечты», Франция, 2017 <br>Режиссер: Эмануэль Амон </h2>
-                      <p>Картина рассказывает об Октябрьской революции через кинематографические образы, созданные очевидцами: Владимиром Маяковским, Львом Кулешовым и Сергеем Эйзенштейнейном.   </p>
-                      <p>Гостями показа стали режиссер Сергей Качкин, принимавший участие в создании картины, и культуролог Александр Михайлов. На связь по скайпу также вышел сценарист фильма Томас Чейсон. </p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="power"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Завтра», Россия, 2012 <br>Режиссер: Андрей Грязев  </h2>
-                      <p>Фильм показывает участников арт-группы «Война», которые занимались протестным политическим искусством. Режиссер прожил со своими героями полтора года, и его камера фиксировала не только акции, которые становились все более агрессивными, но и повседневность людей, идейно отрицающих все элементы государства, в том числе деньги. </p>
-                      <p>После показа режиссер Андрей Грязев фильма ответил на вопросы зрителей о том, как снималось это кино. </p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="war"></div>
-                  </div>
-                </div>
-                <div class="carousel-item rowx">
-                  <div class="sectionScreenings">
-                    <div class="screeningsText">
-                      <h2>«Вавилонские мечтатели», Израиль, 2016 <br>Режиссер: Роман Шумунов </h2>
-                      <p>Молодая команда танцоров из отдаленных районов Израиля, которая состоит из детей советских мигрантов, пытается выиграть Международный чемпионат по брейк-дансу. Победить в этом конкурсе – их мечта, путь к которой преграждают конфликты и переживания. Герои принимают удары судьбы один за другим, потому что отчаяние – слишком большая роскошь.  </p>
-                      <p>После показа мы связались по скайпу с режиссёром Романом Шумуновым. </p>
-                    </div>
-                    <div class="sectionScreeningsImage" id="dreamers"></div>
-                  </div>
-                </div>
-              </div>
+
+
               <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
               </a>
@@ -199,13 +119,183 @@
               </a>
         </div>
       </div>
+      <div class="rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Сон Му — это я» , США, 2015<br>Режиссер: Адам Хьёберг </h2>
+            <p>«Сон Му — это я» — документальный фильм о северокорейском художнике, который работал в отделе пропаганды Корейской народной армии, но потом бежал из родной страны в Китай. </p>
+            <p>Нашим специальный гостем был Алексей Кириллович Симонов — советский и российский писатель и кинорежиссер. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="sonMu"></div>
+        </div>
+      </div>
+      <div class="rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Аэропорт Донецк», Чехия, 2015<br>Режиссер: Андрей Ерастов </h2>
+            <p>Фильм Ерастова рассказывает о военных действиях в аэропорту столицы Донбасса и показывает конфликт по обе стороны баррикад. </p>
+            <h2>«Два детства», Россия, 2015<br>Режиссер: Владимир Головнёв</h2>
+            <p>Фильм-наблюдение Головнёва рассказывает о природе ложного патриотизма. Главные герои картины — старшеклассники в преддверии праздника Победы.</p>
+            <p>В обсуждении участвовал режиссер Андрей Ерастов. Он вышел с нами на связь по скайпу и ответил на вопросы аудитории о съемках в горячей точке.</p>
+          </div>
+          <div class="sectionScreeningsImage" id="doneck"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Чужая работа», Россия, 2015 <br>Режиссер: Денис Шабаев</h2>
+            <p>Главный герой фильма — гастарбайтер из Таджикистана, Фаррух. Он мечтает стать актёром. Чтобы заработать на жизнь себе и своей семье, он рискует потерять практически всё и остаться в большой негостеприимной Москве на грани нищеты.</p>
+            <p>После просмотра состоялась встреча с режиссером фильма Денисом Шабаевым. </p>
+            <p id="after">Коллеги из FSSNews написали <a href="https://www.fsshsenews.com/single-post/2017/05/29/">отзыв и взяли интервью</a> у Дениса Шабаева.</p>
+          </div>
+          <div class="sectionScreeningsImage" id="work"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Пермь-36. Отражение», Россия, 2016 <br>Режиссер: Сергей Качкин</h2>
+            <p>Картина Качкина рассказывает о политических репрессиях в СССР. В центре повествования — три бывших политзаключенных, сама исправительно-трудовая колония Пермь-36 (ныне музей) и гражданский форум «Пилорама». </p>
+            <p>После просмотра фильма Сергей Качкин рассказал зрителям о съемках и ответил на вопросы. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="perm"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Нестихийное бедствие Китая: Слезы провинции Сычуань», США, 2009 <br>Режиссер: Джон Алперт </h2>
+            <p>В фильме рассказывается о землетрясении в Китае в 2008 году. Бедствие унесло жизни 70 000 человек, каждый седьмой из которых был ребёнком. В тот год тысячи семей потеряли своих единственных детей.  </p>
+            <p>После показа прошла дискуссия с режиссёром фильма Джоном Алпертом. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="tears"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Сила мечты», Франция, 2017 <br>Режиссер: Эмануэль Амон </h2>
+            <p>Картина рассказывает об Октябрьской революции через кинематографические образы, созданные очевидцами: Владимиром Маяковским, Львом Кулешовым и Сергеем Эйзенштейнейном.   </p>
+            <p>Гостями показа стали режиссер Сергей Качкин, принимавший участие в создании картины, и культуролог Александр Михайлов. На связь по скайпу также вышел сценарист фильма Томас Чейсон. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="power"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Завтра», Россия, 2012 <br>Режиссер: Андрей Грязев  </h2>
+            <p>Фильм показывает участников арт-группы «Война», которые занимались протестным политическим искусством. Режиссер прожил со своими героями полтора года, и его камера фиксировала не только акции, которые становились все более агрессивными, но и повседневность людей, идейно отрицающих все элементы государства, в том числе деньги. </p>
+            <p>После показа режиссер Андрей Грязев фильма ответил на вопросы зрителей о том, как снималось это кино. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="war"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Вавилонские мечтатели», Израиль, 2016 <br>Режиссер: Роман Шумунов </h2>
+            <p>Молодая команда танцоров из отдаленных районов Израиля, которая состоит из детей советских мигрантов, пытается выиграть Международный чемпионат по брейк-дансу. Победить в этом конкурсе – их мечта, путь к которой преграждают конфликты и переживания. Герои принимают удары судьбы один за другим, потому что отчаяние – слишком большая роскошь.  </p>
+            <p>После показа мы связались по скайпу с режиссёром Романом Шумуновым. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="dreamers"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mobileScreening">
+      <div class="carousel-item active rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Сон Му — это я» , США, 2015<br>Режиссер: Адам Хьёберг </h2>
+            <p>«Сон Му — это я» — документальный фильм о северокорейском художнике, который работал в отделе пропаганды Корейской народной армии, но потом бежал из родной страны в Китай. </p>
+            <p>Нашим специальный гостем был Алексей Кириллович Симонов — советский и российский писатель и кинорежиссер. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="sonMu"></div>
+        </div>
+      </div>
+      <div class="carousel-item rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Аэропорт Донецк», Чехия, 2015<br>Режиссер: Андрей Ерастов </h2>
+            <p>Фильм Ерастова рассказывает о военных действиях в аэропорту столицы Донбасса и показывает конфликт по обе стороны баррикад. </p>
+            <h2>«Два детства», Россия, 2015<br>Режиссер: Владимир Головнёв</h2>
+            <p>Фильм-наблюдение Головнёва рассказывает о природе ложного патриотизма. Главные герои картины — старшеклассники в преддверии праздника Победы.</p>
+            <p>В обсуждении участвовал режиссер Андрей Ерастов. Он вышел с нами на связь по скайпу и ответил на вопросы аудитории о съемках в горячей точке.</p>
+          </div>
+          <div class="sectionScreeningsImage" id="doneck"></div>
+        </div>
+      </div>
+      <div class="rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Чужая работа», Россия, 2015 <br>Режиссер: Денис Шабаев</h2>
+            <p>Главный герой фильма — гастарбайтер из Таджикистана, Фаррух. Он мечтает стать актёром. Чтобы заработать на жизнь себе и своей семье, он рискует потерять практически всё и остаться в большой негостеприимной Москве на грани нищеты.</p>
+            <p>После просмотра состоялась встреча с режиссером фильма Денисом Шабаевым. </p>
+            <p id="after">Коллеги из FSSNews написали <a href="https://www.fsshsenews.com/single-post/2017/05/29/">отзыв и взяли интервью</a> у Дениса Шабаева.</p>
+          </div>
+          <div class="sectionScreeningsImage" id="work"></div>
+        </div>
+      </div>
+      <div class="rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Пермь-36. Отражение», Россия, 2016 <br>Режиссер: Сергей Качкин</h2>
+            <p>Картина Качкина рассказывает о политических репрессиях в СССР. В центре повествования — три бывших политзаключенных, сама исправительно-трудовая колония Пермь-36 (ныне музей) и гражданский форум «Пилорама». </p>
+            <p>После просмотра фильма Сергей Качкин рассказал зрителям о съемках и ответил на вопросы. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="perm"></div>
+        </div>
+      </div>
+      <div class="rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Нестихийное бедствие Китая: Слезы провинции Сычуань», США, 2009 <br>Режиссер: Джон Алперт </h2>
+            <p>В фильме рассказывается о землетрясении в Китае в 2008 году. Бедствие унесло жизни 70 000 человек, каждый седьмой из которых был ребёнком. В тот год тысячи семей потеряли своих единственных детей.  </p>
+            <p>После показа прошла дискуссия с режиссёром фильма Джоном Алпертом. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="tears"></div>
+        </div>
+      </div>
+      <div class="rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Сила мечты», Франция, 2017 <br>Режиссер: Эмануэль Амон </h2>
+            <p>Картина рассказывает об Октябрьской революции через кинематографические образы, созданные очевидцами: Владимиром Маяковским, Львом Кулешовым и Сергеем Эйзенштейнейном.   </p>
+            <p>Гостями показа стали режиссер Сергей Качкин, принимавший участие в создании картины, и культуролог Александр Михайлов. На связь по скайпу также вышел сценарист фильма Томас Чейсон. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="power"></div>
+        </div>
+      </div>
+      <div class="rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Завтра», Россия, 2012 <br>Режиссер: Андрей Грязев  </h2>
+            <p>Фильм показывает участников арт-группы «Война», которые занимались протестным политическим искусством. Режиссер прожил со своими героями полтора года, и его камера фиксировала не только акции, которые становились все более агрессивными, но и повседневность людей, идейно отрицающих все элементы государства, в том числе деньги. </p>
+            <p>После показа режиссер Андрей Грязев фильма ответил на вопросы зрителей о том, как снималось это кино. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="war"></div>
+        </div>
+      </div>
+      <div class="rowx" data-aos="fade-up">
+        <div class="sectionScreenings">
+          <div class="screeningsText">
+            <h2>«Вавилонские мечтатели», Израиль, 2016 <br>Режиссер: Роман Шумунов </h2>
+            <p>Молодая команда танцоров из отдаленных районов Израиля, которая состоит из детей советских мигрантов, пытается выиграть Международный чемпионат по брейк-дансу. Победить в этом конкурсе – их мечта, путь к которой преграждают конфликты и переживания. Герои принимают удары судьбы один за другим, потому что отчаяние – слишком большая роскошь.  </p>
+            <p>После показа мы связались по скайпу с режиссёром Романом Шумуновым. </p>
+          </div>
+          <div class="sectionScreeningsImage" id="dreamers"></div>
+        </div>
+      </div>
+    </div>
+    </div>
     </div>
   </div>
   <div id="comments" class="wrapperBlack">
     <h1>Гости о нас</h1>
   </div>
   <div class="wrapperComments">
-    <div class="rowMy sectionComments">
+    <div class="rowMy sectionComments" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z">
         </path> </g> </g> </g> </svg>
       <div class="commentsBlock">
@@ -223,7 +313,7 @@
         </div>
       </div>
     </div>
-    <div class="rowMy sectionComments">
+    <div class="rowMy sectionComments" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z">
         </path> </g> </g> </g> </svg>
       <div class="commentsBlock">
@@ -237,7 +327,7 @@
         </div>
       </div>
     </div>
-    <div class="rowMy sectionComments">
+    <div class="rowMy sectionComments" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z">
         </path> </g> </g> </g> </svg>
       <div class="commentsBlock">
@@ -253,7 +343,7 @@
         </div>
       </div>
     </div>
-    <div class="rowMy sectionComments">
+    <div class="rowMy sectionComments" data-aos="fade-up">
       <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z">
       </path> </g> </g> </g> </svg>
       <div class="commentsBlock">
@@ -304,6 +394,14 @@
         </div>
       </div>
     </div>
+    <div class="mobileGallery">
+      <img src="img/slider/1.jpg">
+      <img src="img/slider/2.jpg">
+      <img src="img/slider/3.jpg">
+      <img src="img/slider/4.jpg">
+      <img src="img/slider/5.jpg">
+      <img src="img/slider/6.jpg">
+    </div>
   </div>
   <div class="wrapperBlack">
     <h2>Клуб документального кино OPIA Факультета коммуникаций, медиа и дизайна НИУ ВШЭ.
@@ -327,6 +425,9 @@
       </div>
     </div>
   </div>
+  <script>
+   AOS.init();
+ </script>
 </body>
 </html>
 <!-- Anton Almosov 2018 vk.com/almosov -->
