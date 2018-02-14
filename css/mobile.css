@@ -1,6 +1,6 @@
 @media (max-width:600px){
 
-  .row{
+  .rowMy{
     flex-wrap: wrap;
     max-width: 90%;
   }

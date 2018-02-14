@@ -6,7 +6,11 @@
 @import url("tablet.css");
 @import url("mobile.css");
 
-.row{
+body{
+  overflow-x: hidden;
+}
+
+.rowMy{
   display: flex;
   margin: 0 auto;
 }
@@ -17,20 +21,50 @@
   width: 100vw;
 }
 
-.owl-dot {
-   border-radius: 50px;
-   height: 10px;
-   width: 10px;
-   display: inline-block;
-   background: rgba(127,127,127, 0.5);
-   margin-left: 5px;
-   margin-right: 5px;
+/* Меню */
+.wrapperMenu{
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  z-index: 5;
 }
-
-.owl-dot.active {
-   background: rgba(127,127,127, 1);
+.sectionMenu{
+  width: 1200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.sectionMenu a{
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.sectionMenu a:hover{
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.sectionMenu a:visited{
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.sectionMenu a:active{
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
 /* Шапка */
 .wrapperHead{
   height: 100vh;
@@ -58,8 +92,8 @@
 
 /*Кто мы? */
 .wrapperWhite{
-  padding-top: 200px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .sectionWho{
   flex-direction: column;
@@ -73,7 +107,7 @@
   letter-spacing: 2px;
   font-size: 16px;
   color: white;
-  transform: translateY(50%);
+  transform: translateY(70%);
 }
 .whoPar{
   padding-top: 60px;
@@ -142,6 +176,9 @@
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+}
+.carousel-indicators{
+  color: black;
 }
 .controlsNext{
   width: 50px;
@@ -249,6 +286,43 @@
   text-align: center;
 }
 
+
+.sectionGallery{
+  padding: 100px 0px;
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderElement{
+  width: 200px;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+.sliderElement img{
+  width: 1024px;
+  height: 700px;
+}
+#sliderPhoto1{
+  background-image: url(../img/slider/1.jpg);
+}
+#sliderPhoto2{
+  background-image: url(../img/slider/2.jpg);
+}
+#sliderPhoto3{
+  background-image: url(../img/slider/3.jpg);
+}
+#sliderPhoto4{
+  background-image: url(../img/slider/4.jpg);
+}
+#sliderPhoto5{
+  background-image: url(../img/slider/5.jpg);
+}
+#sliderPhoto6{
+  background-image: url(../img/slider/6.jpg);
+}
 
 
 /*  Футер */
