@@ -6,16 +6,6 @@
 @import url("tablet.css");
 @import url("mobile.css");
 
-.owl-dots {
-   text-align: center;
-   position: fixed;
-   bottom: 5px;
-   width: 100%;
-   -webkit-backface-visibility: hidden;
-   -moz-backface-visibility: hidden;
-   -ms-backface-visibility: hidden;
-   backface-visibility: hidden;
-}
 .row{
   display: flex;
   margin: 0 auto;
@@ -182,6 +172,7 @@ body{
     height: 808px;
     background-size: cover;
     margin-left: 50px;
+    padding-right: 15px;
   }
   #sonMu{
     background-image: url(../img/sonMu.jpg);
@@ -216,6 +207,7 @@ body{
     background-image: url(../img/power.jpg);
   }
   .screeningsText{
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
