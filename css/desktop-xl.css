@@ -1,9 +1,8 @@
 @media (min-width:1200px){
   .row{
-    width: 1200px;
+    max-width: 1200px;
   }
   .rowx{
-    width: 1200px;
     width: 100vw;
   }
 
@@ -45,19 +44,26 @@
     width: 90%;
   }
   .sectionScreenings{
-    width: 100%;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
-    padding: 100px 0px;
+    padding-top: 50px;
     align-items: center;
   }
   .sectionScreeningsImage{
-    display: inline-block;
     width: 40%;
+    height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 50px;
     padding-right: 15px;
+  }
+  .screeningsText{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
   }
   .commentsBlock_text{
     width: 70%;

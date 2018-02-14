@@ -3,7 +3,7 @@
     max-width: 1024px;
   }
   .rowx{
-    max-width: 1024px;
+    min-width: 1024px;
     width: 100vw;
   }
   .headSection h1{
@@ -40,6 +40,7 @@
   }
   .sectionScreenings{
     width: 1024px;
+    height: 900px;
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
@@ -47,10 +48,18 @@
   }
   .sectionScreeningsImage{
     width: 40%;
+    height: 500px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 50px;
     padding-right: 15px;
+  }
+  .screeningsText{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
   }
   .commentsBlock{
     display: flex;
