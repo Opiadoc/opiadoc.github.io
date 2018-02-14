@@ -9,7 +9,6 @@
 .row{
   display: flex;
   margin: 0 auto;
-  width: 1200px;
 }
 .rowx{
   display: flex;
@@ -32,9 +31,6 @@
    background: rgba(127,127,127, 1);
 }
 
-body{
-  min-width: 1200px;
-}
 /* Шапка */
 .wrapperHead{
   height: 100vh;
@@ -47,7 +43,6 @@ body{
   justify-content: center;
 }
 .headSection h1{
-  font-size: 72px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -55,7 +50,6 @@ body{
 }
 .headSection p{
   weight: 500;
-  font-size: 24px;
   line-height: 3;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -90,16 +84,6 @@ body{
 }
 .whoPar p{
   font-family: 'Roboto', sans-serif;
-}
-#whoMain{
-  font-size: 26px;
-  line-height: 1.35;
-}
-#whoSide{
-  margin-top: 30px;
-  font-size: 22px;
-  line-height: 1.35;
-  font-weight: 300;
 }
 
 
@@ -138,18 +122,10 @@ body{
 .sectionResults{
   justify-content: space-between;
 }
-.resultsCard{
-  width: 260px;
-}
 .resultsCard h2{
   font-family: 'Roboto', sans-serif;
   font-size: 34px;
   font-weight: 700;
-}
-.resultsCard p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
 }
 .lineBlack{
   width: 100%;
@@ -160,20 +136,9 @@ body{
 
 
 /* Показы */
-  .sectionScreenings{
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 0px;
-  }
-  .sectionScreeningsImage{
-    display: inline-block;
-    width: 560px;
-    height: 808px;
-    background-size: cover;
-    margin-left: 50px;
-    padding-right: 15px;
-  }
+.wrapperScreenings{
+  width: 100vw;
+}
   #sonMu{
     background-image: url(../img/sonMu.jpg);
   }
@@ -242,33 +207,12 @@ body{
 .sectionComments{
   flex-flow: column;
   align-items: center;
-  align-items: flex-end;
   margin-bottom: 100px;
 }
 .sectionComments svg{
-  transform: translateX(-1650%);
   margin-bottom: 50px;
 }
-.commentsBlock{
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-.commentsBlock_text{
-  width: 70%;
-}
-.commentsBlock_text p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 1.55;
-  font-weight: 300;
-}
-.commentsBlock_author {
-  display: flex;
-  width: 20%;
-  flex-direction: column;
-  align-items: center;
-}
+
 .commentsBlock_author img{
   width: 80px;
   height: 80px;
@@ -305,13 +249,7 @@ body{
   width: 560px;
   transform: translateX(1%);
 }
-.sectionFooter p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 1.55;
-  font-weight: 300;
-  text-align: center;
-}
+
 .footerSocial{
   width: 200px;
   display: flex;

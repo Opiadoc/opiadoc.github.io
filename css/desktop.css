@@ -1,12 +1,11 @@
-@media (min-width:1200px){
+@media (min-width: 1024px) and (max-width: 1199px){
   .row{
-    width: 1200px;
+    max-width: 1024px;
   }
   .rowx{
-    width: 1200px;
+    max-width: 1024px;
     width: 100vw;
   }
-
   .headSection h1{
     font-size: 72px;
     font-family: 'Roboto', sans-serif;
@@ -32,32 +31,31 @@
     font-weight: 300;
   }
   .resultsCard{
-    width: 260px;
+    width: 220px;
   }
   .resultsCard p{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
   }
-  .commentsBlock{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-  }
   .sectionScreenings{
-    width: 100%;
+    width: 1024px;
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
     align-items: center;
   }
   .sectionScreeningsImage{
-    display: inline-block;
     width: 40%;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 50px;
     padding-right: 15px;
+  }
+  .commentsBlock{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
   }
   .commentsBlock_text{
     width: 70%;

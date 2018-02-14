@@ -1,14 +1,15 @@
-@media (min-width:1200px){
+@media (max-width:600px){
+
   .row{
-    width: 1200px;
+    flex-wrap: wrap;
+    max-width: 90%;
   }
   .rowx{
-    width: 1200px;
-    width: 100vw;
+    flex-wrap: wrap;
+    max-width: 90%;
   }
-
   .headSection h1{
-    font-size: 72px;
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -16,67 +17,70 @@
   }
   .headSection p{
     weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 3;
     font-family: 'Roboto', sans-serif;
     color: white;
   }
   #whoMain{
-    font-size: 26px;
-    line-height: 1.35;
+    font-size: 18px;
   }
-  #whoSide{
-    margin-top: 30px;
-    font-size: 22px;
-    line-height: 1.35;
+  #whoMain{
+    margin-bottom: 30px;
     font-weight: 300;
+    font-size: 16px;
   }
   .resultsCard{
-    width: 260px;
+    width: 100%;
+    margin-bottom: 80px;
   }
   .resultsCard p{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
   }
-  .commentsBlock{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-  }
   .sectionScreenings{
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
-    padding: 100px 0px;
+    flex-flow: column;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0px;
   }
   .sectionScreeningsImage{
-    display: inline-block;
-    width: 40%;
+    width: 100%;
+    height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     margin-left: 50px;
     padding-right: 15px;
   }
+  .commentsBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   .commentsBlock_text{
-    width: 70%;
+    width: 100%;
   }
   .commentsBlock_author {
+    margin-top: 40px;
     display: flex;
-    width: 20%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
   .commentsBlock_text p{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.55;
     font-weight: 300;
   }
   .sectionFooter p{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.55;
     font-weight: 300;
     text-align: center;
