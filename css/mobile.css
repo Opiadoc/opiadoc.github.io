@@ -1,8 +1,11 @@
 @media (max-width:600px){
 
+  body{
+    overflow: hidden;
+  }
   .rowMy{
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 90vw;
   }
   .rowx{
     flex-wrap: wrap;
