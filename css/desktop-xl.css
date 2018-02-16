@@ -6,6 +6,23 @@
     width: 100vw;
   }
 
+  .wrapperMenu{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+  }
+  .sectionMenu{
+    width: 1200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .sectionMenu a{
     color: white;
     padding: 10px 20px;

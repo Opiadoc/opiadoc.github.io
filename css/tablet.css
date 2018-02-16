@@ -8,6 +8,25 @@
     flex-wrap: wrap;
     max-width: 90%;
   }
+
+  .wrapperMenu{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+  }
+  .sectionMenu{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .sectionMenu a{
     color: white;
     padding: 10px 20px;
