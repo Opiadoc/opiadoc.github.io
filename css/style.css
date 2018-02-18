@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,7 +53,7 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
   .mainWrapperDesktop {
     width: 100vw;
     height: 100vh;
@@ -88,6 +89,12 @@ table {
       height: 100vh;
       position: absolute;
       z-index: -5; }
+    .rowHead #videoPreview {
+      left: 40%;
+      width: 60%;
+      height: 100vh;
+      position: absolute;
+      z-index: -3; }
   .infoSection {
     width: 400px;
     height: 100vh;
@@ -176,6 +183,159 @@ table {
         font-size: 24pt; }
     .inFuture .inFutureButtons {
       width: 67%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 30px; }
+      .inFuture .inFutureButtons div {
+        padding: 10px 20px;
+        border: 3px solid #22242B;
+        border-radius: 100px;
+        color: white;
+        background-color: #22242B; }
+        .inFuture .inFutureButtons div:hover {
+          background-color: white;
+          color: black; } }
+
+@font-face {
+  font-family: 'andale';
+  src: url("fonts/andalemo_0-webfont.woff2") format("woff2"), url("fonts/andalemo_0-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .mainWrapperDesktop {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; }
+  .bgHolder {
+    width: 40vw;
+    height: 100%;
+    background-color: #22242B;
+    position: absolute;
+    z-index: -2; }
+  .bgWhiten {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -3; }
+  .rowHead {
+    margin: auto;
+    width: 1000px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rowHead #focus {
+      height: 100vh;
+      position: absolute;
+      z-index: -1; }
+    .rowHead #videoBG {
+      left: 40%;
+      width: 60%;
+      height: 100vh;
+      position: absolute;
+      z-index: -5; }
+    .rowHead #videoPreview {
+      left: 40%;
+      width: 60%;
+      height: 100vh;
+      position: absolute;
+      z-index: -3; }
+  .infoSection {
+    width: 400px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .infoSection img {
+      top: 50%;
+      -webkit-transform: translateY(5%);
+      -ms-transform: translateY(5%);
+      transform: translateY(5%);
+      width: 400px; }
+  .logo {
+    padding-top: 50px; }
+    .logo h1 {
+      font-size: 100pt;
+      color: white;
+      font-family: 'PT Mono';
+      margin-top: 5px; }
+    .logo h2 {
+      font-size: 12pt;
+      color: white;
+      font-family: 'PT Mono'; }
+  .links {
+    padding-bottom: 50px; }
+    .links span {
+      font-family: 'PT Mono';
+      font-size: 20pt;
+      text-decoration: underline;
+      color: white;
+      padding: 5px 15px;
+      line-height: 30pt; }
+      .links span:hover {
+        text-decoration: none; }
+      .links span a {
+        color: white; }
+        .links span a:hover {
+          text-decoration: none; }
+        .links span a:visited {
+          color: white; }
+  .inFuture {
+    height: 100vh;
+    width: 500px;
+    margin-left: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    font-family: 'PT Mono'; }
+    .inFuture h3 {
+      font-size: 14pt;
+      margin-top: 10px; }
+    .inFuture h2 {
+      font-size: 16pt;
+      margin-bottom: 10px; }
+    .inFuture h1 {
+      font-size: 30pt;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    .inFuture p {
+      margin-top: 10px;
+      font-size: 13pt;
+      line-height: 15pt; }
+    .inFuture .inFutureDates {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 40px; }
+      .inFuture .inFutureDates span {
+        font-size: 18pt; }
+    .inFuture .inFutureButtons {
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;

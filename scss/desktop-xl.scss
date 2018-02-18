@@ -1,5 +1,5 @@
 @import "styles";
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
     .mainWrapperDesktop{
       width: 100vw;
       height: 100vh;
@@ -37,6 +37,13 @@
         height: 100vh;
         position: absolute;
         z-index: -5;
+      }
+      #videoPreview{
+        left: 40%;
+        width: 60%;
+        height: 100vh;
+        position: absolute;
+        z-index: -3;
       }
     }
     .infoSection{
