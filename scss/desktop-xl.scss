@@ -1,0 +1,129 @@
+@import "styles";
+@media (min-width: 1441px) {
+    .mainWrapper{
+      position: relative;
+    }
+    .bgHolder{
+      width: 40vw;
+      height: 100%;
+      background-color: $blackBG;
+      position: absolute;
+      z-index: -2;
+    }
+    .rowHead{
+      margin: auto;
+      width: 1280px;
+      height: 100vh;
+      display: flex;
+      #focus{
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+      }
+      #videoBG{
+        left: 40%;
+        height: 101vh;
+        position: absolute;
+        z-index: -2;
+      }
+    }
+    .infoSection{
+      width: 400px;
+      height: 100vh;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      img{
+        top: 50%;
+        transform: translateY(5%);
+        width: 400px;
+      }
+    }
+    .logo{
+      padding-top: 50px;
+      h1{
+        font-size: 100pt;
+        color: white;
+        font-family: 'PT Mono';
+        margin-top: 5px;
+      }
+      h2{
+        font-size: 12pt;
+        color: white;
+        font-family: 'PT Mono';
+      }
+    }
+   .links{
+     padding-bottom: 50px;
+     span{
+       font-family: 'PT Mono';
+       font-size: 20pt;
+       text-decoration: underline;
+       color: white;
+       padding: 5px 15px;
+       line-height: 30pt;
+       &:hover{
+         text-decoration: none;
+       }
+       a{
+         color: white;
+         &:hover{
+           text-decoration: none;
+         }
+         &:visited{
+           color: white;
+         }
+       }
+     }
+    }
+    .inFuture{
+      width: 500px;
+      margin-left: 300px;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      font-family: 'PT Mono';
+        h3{
+          font-size: 16pt;
+          margin-top: 10px;
+        }
+        h2{
+          font-size: 18pt;
+          margin-bottom: 10px;
+        }
+        h1{
+          font-size: 36pt;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+        p{
+          margin-top: 10px;
+          font-size: 13pt;
+        }
+        .inFutureDates{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+          span{
+            font-size: 24pt;
+          }
+        }
+        .inFutureButtons{
+          width: 60%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 50px;
+          div{
+            padding: 10px 20px;
+            border: 2px solid $blackBG;
+            border-radius: 100px;
+            color: white;
+            background-color: $blackBG;
+            &:hover{
+              background-color: rgba(0,0,0,0);
+              color: black;
+            }
+          }
+        }
+    }
+}
