@@ -123,18 +123,18 @@
           }
         }
         .inFutureButtons{
-          width: 60%;
+          width: 67%;
           display: flex;
           justify-content: space-between;
-          margin-top: 50px;
+          margin-top: 30px;
           div{
             padding: 10px 20px;
-            border: 2px solid $blackBG;
+            border: 3px solid $blackBG;
             border-radius: 100px;
             color: white;
             background-color: $blackBG;
             &:hover{
-              background-color: rgba(0,0,0,0);
+              background-color: white;
               color: black;
             }
           }

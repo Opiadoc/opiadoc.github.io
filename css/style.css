@@ -175,22 +175,22 @@ table {
       .inFuture .inFutureDates span {
         font-size: 24pt; }
     .inFuture .inFutureButtons {
-      width: 60%;
+      width: 67%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      margin-top: 50px; }
+      margin-top: 30px; }
       .inFuture .inFutureButtons div {
         padding: 10px 20px;
-        border: 2px solid #22242B;
+        border: 3px solid #22242B;
         border-radius: 100px;
         color: white;
         background-color: #22242B; }
         .inFuture .inFutureButtons div:hover {
-          background-color: transparent;
+          background-color: white;
           color: black; } }
 
 body {
