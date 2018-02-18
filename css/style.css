@@ -110,9 +110,9 @@ table {
     justify-content: space-between; }
     .infoSection img {
       top: 50%;
-      -webkit-transform: translateY(5%);
-      -ms-transform: translateY(5%);
-      transform: translateY(5%);
+      -webkit-transform: translateY(-2%);
+      -ms-transform: translateY(-2%);
+      transform: translateY(-2%);
       width: 400px; }
   .logo {
     padding-top: 50px; }
@@ -263,9 +263,9 @@ table {
     justify-content: space-between; }
     .infoSection img {
       top: 50%;
-      -webkit-transform: translateY(5%);
-      -ms-transform: translateY(5%);
-      transform: translateY(5%);
+      -webkit-transform: translateY(-2%);
+      -ms-transform: translateY(-2%);
+      transform: translateY(-2%);
       width: 360px; }
   .logo {
     padding-top: 50px; }
