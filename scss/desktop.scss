@@ -1,13 +1,21 @@
 @import "styles";
-@media (min-width: 1025px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   body{
-      overflow-x: hidden;
+      overflow: hidden;
   }
   .mainWrapperDesktop{
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
+  }
+  #pochta{
+    position: absolute;
+    bottom: 120px;
+    width: 1000px;
+    text-align: right;
+    font-family: 'PT Mono';
+    font-size: 10pt;
   }
   .bgHolder{
     width: 40vw;

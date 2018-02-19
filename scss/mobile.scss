@@ -18,6 +18,13 @@
     height: 900px;
     z-index: -3;
   }
+  #pochta{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: 'PT Mono';
+    font-size: 10pt;
+  }
   .bgWhiten{
     background-color: white;
     opacity: 0.4;

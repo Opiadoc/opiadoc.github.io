@@ -1,13 +1,20 @@
 @import "styles";
 @media (min-width: 1440px) {
   body{
-      overflow-x: hidden;
+      overflow: hidden;
   }
     .mainWrapperDesktop{
       box-sizing: content-box;
       width: 100vw;
       height: 100vh;
       position: relative;
+    }
+    #pochta{
+      position: absolute;
+      bottom: 50px;
+      width: 1280px;
+      text-align: right;
+      font-family: 'PT Mono';
     }
     .bgHolder{
       width: 40vw;
@@ -111,6 +118,7 @@
       display: none;
     }
     .inFuture{
+      position: relative;
       height: 100vh;
       width: 500px;
       margin-left: 300px;
