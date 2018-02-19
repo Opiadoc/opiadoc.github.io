@@ -548,7 +548,7 @@ table {
     position: absolute;
     width: 20%;
     right: 50%;
-    top: 36%;
+    top: 35%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%); }
