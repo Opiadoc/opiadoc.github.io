@@ -514,7 +514,7 @@ table {
           background-color: white;
           color: black; } }
 
-@media (max-width: 767px) {
+@media (min-width: 322px) and (max-width: 767px) {
   body {
     overflow-x: hidden; }
   #focus {
@@ -527,7 +527,7 @@ table {
     position: absolute;
     top: 40%;
     width: 100vw;
-    height: 110vh;
+    height: 900px;
     z-index: -3; }
   .bgWhiten {
     background-color: white;
@@ -535,7 +535,7 @@ table {
     position: absolute;
     top: 40%;
     width: 100vw;
-    height: 110vh;
+    height: 900px;
     z-index: -2; }
   #focusTablet {
     display: none; }
@@ -548,7 +548,7 @@ table {
     position: absolute;
     width: 20%;
     right: 50%;
-    top: 35%;
+    top: 36%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%); }
@@ -568,16 +568,60 @@ table {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column; }
-    .infoSection .logo h1 {
-      font-family: 'PT Mono';
-      font-size: 80pt;
-      color: white; }
-    .infoSection .logo h2 {
-      font-family: 'PT Mono';
-      font-size: 10pt;
-      color: white;
-      padding-top: 30px; }
-    .infoSection .logo .linksMobile {
+    .infoSection .logo {
+      width: 70vw; }
+      .infoSection .logo h1 {
+        text-align: center;
+        font-family: 'PT Mono';
+        font-size: 90pt;
+        color: white; }
+      .infoSection .logo h2 {
+        text-align: center;
+        font-family: 'PT Mono';
+        font-size: 10pt;
+        color: white;
+        padding-top: 30px; }
+      .infoSection .logo .linksMobile {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: -5px; }
+        .infoSection .logo .linksMobile span {
+          font-family: 'PT Mono';
+          font-size: 16pt;
+          text-decoration: underline;
+          color: white;
+          padding: 5px 15px;
+          line-height: 30pt; }
+          .infoSection .logo .linksMobile span:hover {
+            text-decoration: none; }
+          .infoSection .logo .linksMobile span a {
+            color: white; }
+            .infoSection .logo .linksMobile span a:hover {
+              text-decoration: none; }
+            .infoSection .logo .linksMobile span a:visited {
+              color: white; }
+  .inFuture {
+    margin: 90% auto 20% auto;
+    width: 90vw;
+    font-family: 'PT Mono'; }
+    .inFuture h2 {
+      font-size: 16pt; }
+    .inFuture h1 {
+      margin-top: 10px;
+      font-size: 24pt;
+      margin-bottom: 5px; }
+    .inFuture p {
+      margin-top: 20px;
+      font-size: 12pt; }
+    .inFuture h3 {
+      margin-top: 10px;
+      font-size: 14pt; }
+    .inFuture .inFutureDates {
       width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -585,24 +629,124 @@ table {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      margin-top: 10px; }
-      .infoSection .logo .linksMobile span {
-        font-family: 'PT Mono';
-        font-size: 16pt;
-        text-decoration: underline;
+      margin-top: 20px; }
+      .inFuture .inFutureDates span {
+        font-size: 16pt; }
+    .inFuture .inFutureButtons {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 40px; }
+      .inFuture .inFutureButtons a {
+        text-decoration: none; }
+      .inFuture .inFutureButtons div {
+        font-size: 12pt;
+        padding: 10px 20px;
+        border: 3px solid #22242B;
+        border-radius: 100px;
         color: white;
-        padding: 5px 15px;
-        line-height: 30pt; }
-        .infoSection .logo .linksMobile span:hover {
-          text-decoration: none; }
-        .infoSection .logo .linksMobile span a {
-          color: white; }
-          .infoSection .logo .linksMobile span a:hover {
+        background-color: #22242B; }
+        .inFuture .inFutureButtons div:active {
+          background-color: white;
+          color: black; } }
+
+@media (max-width: 321px) {
+  body {
+    overflow-x: hidden; }
+  #focus {
+    display: none; }
+  #camera {
+    display: none; }
+  .links {
+    display: none; }
+  #videoBG {
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 900px;
+    z-index: -3; }
+  .bgWhiten {
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 900px;
+    z-index: -2; }
+  #focusTablet {
+    display: none; }
+  #focusMobile {
+    position: absolute;
+    z-index: -1; }
+    #focusMobile svg {
+      height: 100%; }
+  #cameraMobile {
+    position: absolute;
+    width: 20%;
+    right: 50%;
+    top: 41%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
+  .infoSection {
+    height: 50vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+    .infoSection .logo {
+      width: 80vw; }
+      .infoSection .logo h1 {
+        text-align: center;
+        font-family: 'PT Mono';
+        font-size: 60pt;
+        color: white; }
+      .infoSection .logo h2 {
+        text-align: center;
+        font-family: 'PT Mono';
+        font-size: 7pt;
+        color: white;
+        padding-top: 30px; }
+      .infoSection .logo .linksMobile {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: -5px; }
+        .infoSection .logo .linksMobile span {
+          font-family: 'PT Mono';
+          font-size: 12pt;
+          text-decoration: underline;
+          color: white;
+          padding: 5px 15px;
+          line-height: 30pt; }
+          .infoSection .logo .linksMobile span:hover {
             text-decoration: none; }
-          .infoSection .logo .linksMobile span a:visited {
+          .infoSection .logo .linksMobile span a {
             color: white; }
+            .infoSection .logo .linksMobile span a:hover {
+              text-decoration: none; }
+            .infoSection .logo .linksMobile span a:visited {
+              color: white; }
   .inFuture {
-    margin: 70% auto 20% auto;
+    margin: 90% auto 20% auto;
     width: 90vw;
     font-family: 'PT Mono'; }
     .inFuture h2 {

@@ -1,4 +1,4 @@
-@media (min-width: 322px) and (max-width: 767px) {
+@media (max-width: 321px) {
   body{
       overflow-x: hidden;
   }
@@ -41,7 +41,7 @@
     position: absolute;
     width: 20%;
     right: 50%;
-    top: 36%;
+    top: 41%;
     transform: translateX(50%);
   }
   .infoSection{
@@ -52,17 +52,17 @@
     justify-content: space-between;
     flex-flow: column;
     .logo{
-      width: 70vw;
+      width: 80vw;
       h1{
         text-align: center;
         font-family: 'PT Mono';
-        font-size: 90pt;
+        font-size: 60pt;
         color: white;
       }
       h2{
         text-align: center;
         font-family: 'PT Mono';
-        font-size: 10pt;
+        font-size: 7pt;
         color: white;
         padding-top: 30px;
       }
@@ -73,7 +73,7 @@
         margin-top: -5px;
         span{
           font-family: 'PT Mono';
-          font-size: 16pt;
+          font-size: 12pt;
           text-decoration: underline;
           color: white;
           padding: 5px 15px;
