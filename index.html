@@ -4,15 +4,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.vide.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
   <title>OPIA DOC HSE</title>
 </head>
 <body>
   <div class="mainWrapperDesktop">
     <div class="bgHolder"></div>
     <div class="bgWhiten"></div>
-    <div class="rowHead">
+    <div class="rowXHead">
       <svg version="1.1" id="focus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 830 1080" style="enable-background:new 0 0 830 1080;" xml:space="preserve">
         <style type="text/css">
@@ -35,8 +38,8 @@
         </div>
         <img id="camera" src="img/camera.svg" alt="">
         <div class="links">
-          <!-- <span id="about">Про клуб</span>
-          <span id="guests">Гости</span><br> -->
+          <span id="about">Про клуб</span>
+          <span id="guests">Гости</span><br>
           <span><a href="https://vk.com/opia_doc_hse" target="_blank">ВК</a></span>
           <span><a href="https://www.facebook.com/opia.doc.hse/" target="_blank">ФБ</a></span>
           <span><a href="https://www.instagram.com/opia_doc_hse/" target="_blank">ИНСТА</a></span>
@@ -69,6 +72,98 @@
         </div>
       </div>
       <p id="pochta">opia.club.hse@gmail.com</p>
+    </div>
+  </div>
+  <div class="aboutUs">
+    <div class="rowX whoIs">
+      <h2>Кто мы?</h2>
+      <div class="whoIsBlock">
+        <p><span>OPIA</span>* - клуб документального кино, созданный студентами программы Медиакоммуникации весной 2017 года. Вот уже почти год мы смотрим и обсуждаем неигровое кино с нашими зрителями и экспертами, так же влюбленными в документалистику, как и мы. Каждый фильм не похож на предыдущий, но все они непременно меняют в нас нечто неуловимое. Как взгляд вскользь, сквозь. Такова задумка документалистики.</p>
+        <p id="caption">* opia - двоякое ощущение, когда вы смотрите кому-то в глаза и одновременно чувствуете себя навязчивым и уязвимым. Как если бы вы смотрели в замочную скважину.</p>
+      </div>
+    </div>
+    <div class="wrapperBlack">
+      <div class="rowX heading">
+        <h1>2017</h1>
+      </div>
+    </div>
+    <div class="rowX results">
+      <div class="resultsCard">
+        <h1>8 фильмов</h1>
+        <div class="lineBlack"></div>
+        <p>Мы посмотрели со зрителями и экспертами</p>
+      </div>
+      <div class="resultsCard">
+        <h1>10 экспертов</h1>
+        <div class="lineBlack"></div>
+        <p>Участвовали в дискуссиях онлайн и оффлайн</p>
+      </div>
+      <div class="resultsCard">
+        <h1>300 зрителей</h1>
+        <div class="lineBlack"></div>
+        <p>Посетили наши показы</p>
+      </div>
+      <div class="resultsCard">
+        <h1>21 час</h1>
+        <div class="lineBlack"></div>
+        <p>Продолжались просмотры и дискуссии</p>
+      </div>
+    </div>
+    <div class="wrapperBlack">
+      <div class="rowX heading">
+        <h1>Показы</h1>
+      </div>
+    </div>
+    <div class="rowX sliderShows">
+      <div class="container">
+        <div class="row">
+          <div class="carousel slide" id="showsSlider" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#showsSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#showsSlider" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active">
+                <div class="item-wrapper" id="sliderItem">
+                  <div class="sliderText">
+                    <h1>
+                      «Сон Му – это я» , США, 2015 <br>
+                      Режиссер: Адам Хьёберг
+                    </h1>
+                    <p>«Сон Му — это я» — документальный фильм о северокорейском художнике, который работал в отделе пропаганды Корейской народной армии, но потом бежал из родной страны в Китай. </p>
+                    <p>Нашим специальный гостем был Алексей Кириллович Симонов— советский и российский писатель и кинорежиссер.</p>
+                  </div>
+                  <div class="sliderImage" id="sonMu"></div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="item-wrapper" id="sliderItem">
+                  <div class="sliderText">
+                    <h1>
+                      «Чужая работа», Россия, 2015 <br>
+                      Режиссер: Денис Шабаев
+                    </h1>
+                    <p>Главный герой фильма – гастарбайтер из Таджикистана, Фаррух. Чтобы заработать на жизнь себе и своей семье, он рискует потерять практически всё и остаться в большой негостеприимной Москве на грани нищеты.  </p>
+                    <p>После просмотра состоялась встреча с режиссером фильма Денисом Шабаевым. </p>
+                  </div>
+                  <div class="sliderImage" id="work"></div>
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#showsSlider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#showsSlider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

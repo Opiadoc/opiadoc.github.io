@@ -55,7 +55,7 @@ table {
 
 @media (min-width: 1440px) {
   body {
-    overflow: hidden; }
+    overflow-x: hidden; }
   .mainWrapperDesktop {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -81,28 +81,28 @@ table {
     opacity: 0.4;
     position: absolute;
     z-index: -3; }
-  .rowHead {
+  .rowXHead {
     margin: auto;
     width: 1280px;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .rowHead #focus {
+    .rowXHead #focus {
       height: 100vh;
       position: absolute;
       z-index: -1; }
-    .rowHead #focusMobile {
+    .rowXHead #focusMobile {
       display: none; }
-    .rowHead #focusTablet {
+    .rowXHead #focusTablet {
       display: none; }
-    .rowHead #videoBG {
+    .rowXHead #videoBG {
       left: 40%;
       width: 60%;
       height: 100vh;
       position: absolute;
       z-index: -5; }
-    .rowHead #videoPreview {
+    .rowXHead #videoPreview {
       left: 40%;
       width: 60%;
       height: 100vh;
@@ -218,7 +218,137 @@ table {
         background-color: #22242B; }
         .inFuture .inFutureButtons div:hover {
           background-color: white;
-          color: black; } }
+          color: black; }
+  .aboutUs {
+    width: 100vw; }
+  .rowX {
+    width: 1280px;
+    margin: 0 auto; }
+  #caption {
+    font-size: 14pt;
+    margin-bottom: 0px; }
+  .whoIs {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .whoIs h2 {
+      display: inline;
+      padding: 5px 20px;
+      font-size: 22pt;
+      background-color: #22242B;
+      color: white;
+      font-family: 'PT Sans';
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+    .whoIs .whoIsBlock {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-top: 2px solid #22242B;
+      border-bottom: 2px solid #22242B;
+      padding: 50px 0px;
+      width: 70%; }
+      .whoIs .whoIsBlock p {
+        font-family: 'PT Sans';
+        font-size: 16pt;
+        text-align: center;
+        line-height: 1.3;
+        margin-bottom: 30px; }
+        .whoIs .whoIsBlock p span {
+          font-size: 18pt; }
+  .wrapperBlack {
+    width: 100vw;
+    background-color: #22242B; }
+  .heading {
+    padding: 60px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .heading h1 {
+      display: inline;
+      font-size: 48pt;
+      font-family: 'PT Mono';
+      color: white;
+      margin: 0 auto; }
+  .results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 120px 0 170px 0; }
+    .results .resultsCard {
+      width: 22%; }
+      .results .resultsCard h1 {
+        font-family: 'PT Mono';
+        font-size: 28pt; }
+      .results .resultsCard .lineBlack {
+        margin: 20px 0px;
+        border-top: 2px solid #22242B; }
+      .results .resultsCard p {
+        font-size: 14pt;
+        line-height: 1.3;
+        font-family: 'PT Mono'; }
+  .sliderShows {
+    padding: 40px 0 150px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .sliderShows #showsSlider #sliderItem {
+      width: 80%;
+      margin: auto;
+      font-family: 'PT Mono';
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .sliderShows #showsSlider #sliderItem .sliderText {
+        width: 40%; }
+        .sliderShows #showsSlider #sliderItem .sliderText h1 {
+          font-size: 18pt;
+          margin-bottom: 30px; }
+        .sliderShows #showsSlider #sliderItem .sliderText p {
+          font-size: 14pt;
+          margin-bottom: 15px; }
+      .sliderShows #showsSlider #sliderItem .sliderImage {
+        height: 800px;
+        width: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .sliderShows #showsSlider #sliderItem #sonMu {
+        background-image: url(../img/slider/sonMu.jpg); }
+      .sliderShows #showsSlider #sliderItem #work {
+        background-image: url(../img/slider/work.jpg); } }
 
 @font-face {
   font-family: 'andale';
@@ -825,7 +955,7 @@ table {
         text-decoration: none; }
       .inFuture .inFutureButtons div {
         font-size: 12pt;
-        padding: 10px 20px;
+        padding: 10px 15px;
         border: 3px solid #22242B;
         border-radius: 100px;
         color: white;
