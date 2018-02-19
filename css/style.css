@@ -54,11 +54,14 @@ table {
   font-style: normal; }
 
 @media (min-width: 1440px) {
+  body {
+    overflow-x: hidden; }
   .mainWrapperDesktop {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
     width: 100vw;
     height: 100vh;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
   .bgHolder {
     width: 40vw;
     height: 100%;
@@ -83,6 +86,10 @@ table {
       height: 100vh;
       position: absolute;
       z-index: -1; }
+    .rowHead #focusMobile {
+      display: none; }
+    .rowHead #focusTablet {
+      display: none; }
     .rowHead #videoBG {
       left: 40%;
       width: 60%;
@@ -95,6 +102,8 @@ table {
       height: 100vh;
       position: absolute;
       z-index: -3; }
+  #cameraMobile {
+    display: none; }
   .infoSection {
     width: 400px;
     height: 100vh;
@@ -108,7 +117,7 @@ table {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .infoSection img {
+    .infoSection #camera {
       top: 50%;
       -webkit-transform: translateY(-2%);
       -ms-transform: translateY(-2%);
@@ -142,6 +151,8 @@ table {
           text-decoration: none; }
         .links span a:visited {
           color: white; }
+  .linksMobile {
+    display: none; }
   .inFuture {
     height: 100vh;
     width: 500px;
@@ -190,6 +201,8 @@ table {
       -ms-flex-pack: justify;
       justify-content: space-between;
       margin-top: 30px; }
+      .inFuture .inFutureButtons a {
+        text-decoration: none; }
       .inFuture .inFutureButtons div {
         padding: 10px 20px;
         border: 3px solid #22242B;
@@ -206,7 +219,9 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1025px) and (max-width: 1439px) {
+  body {
+    overflow-x: hidden; }
   .mainWrapperDesktop {
     width: 100vw;
     height: 100vh;
@@ -236,6 +251,8 @@ table {
       height: 100vh;
       position: absolute;
       z-index: -1; }
+    .rowHead #focusMobile {
+      display: none; }
     .rowHead #videoBG {
       left: 40%;
       width: 60%;
@@ -248,6 +265,10 @@ table {
       height: 100vh;
       position: absolute;
       z-index: -3; }
+  #cameraMobile {
+    display: none; }
+  #focusTablet {
+    display: none; }
   .infoSection {
     width: 400px;
     height: 100vh;
@@ -261,7 +282,7 @@ table {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .infoSection img {
+    .infoSection #camera {
       top: 50%;
       -webkit-transform: translateY(-2%);
       -ms-transform: translateY(-2%);
@@ -295,6 +316,8 @@ table {
           text-decoration: none; }
         .links span a:visited {
           color: white; }
+  .linksMobile {
+    display: none; }
   .inFuture {
     height: 100vh;
     width: 500px;
@@ -343,6 +366,8 @@ table {
       -ms-flex-pack: justify;
       justify-content: space-between;
       margin-top: 30px; }
+      .inFuture .inFutureButtons a {
+        text-decoration: none; }
       .inFuture .inFutureButtons div {
         padding: 10px 20px;
         border: 3px solid #22242B;
@@ -353,5 +378,274 @@ table {
           background-color: white;
           color: black; } }
 
-body {
-  overflow: hidden; }
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden; }
+  #focus {
+    display: none; }
+  #camera {
+    display: none; }
+  .links {
+    display: none; }
+  #videoBG {
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 110vh;
+    z-index: -3; }
+  .bgWhiten {
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 110vh;
+    z-index: -2; }
+  #focusTablet {
+    position: absolute;
+    z-index: -1; }
+    #focusTablet svg {
+      height: 100%; }
+  #focusMobile {
+    display: none; }
+  #cameraMobile {
+    position: absolute;
+    width: 20%;
+    right: 50%;
+    top: 25%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
+  .infoSection {
+    height: 50vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+    .infoSection .logo h1 {
+      font-family: 'PT Mono';
+      font-size: 100pt;
+      color: white; }
+    .infoSection .logo h2 {
+      font-family: 'PT Mono';
+      font-size: 12pt;
+      color: white;
+      padding-top: 30px; }
+    .infoSection .logo .linksMobile {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 10px; }
+      .infoSection .logo .linksMobile span {
+        font-family: 'PT Mono';
+        font-size: 20pt;
+        text-decoration: underline;
+        color: white;
+        padding: 5px 15px;
+        line-height: 30pt; }
+        .infoSection .logo .linksMobile span:hover {
+          text-decoration: none; }
+        .infoSection .logo .linksMobile span a {
+          color: white; }
+          .infoSection .logo .linksMobile span a:hover {
+            text-decoration: none; }
+          .infoSection .logo .linksMobile span a:visited {
+            color: white; }
+  .inFuture {
+    margin: 50% auto 20% auto;
+    width: 60vw;
+    font-family: 'PT Mono'; }
+    .inFuture h2 {
+      font-size: 18pt; }
+    .inFuture h1 {
+      margin-top: 10px;
+      font-size: 36pt;
+      margin-bottom: 5px; }
+    .inFuture p {
+      margin-top: 20px;
+      font-size: 14pt; }
+    .inFuture h3 {
+      margin-top: 10px;
+      font-size: 16pt; }
+    .inFuture .inFutureDates {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .inFuture .inFutureDates span {
+        font-size: 22pt; }
+    .inFuture .inFutureButtons {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 40px; }
+      .inFuture .inFutureButtons a {
+        text-decoration: none; }
+      .inFuture .inFutureButtons div {
+        font-size: 16pt;
+        padding: 20px 40px;
+        border: 3px solid #22242B;
+        border-radius: 100px;
+        color: white;
+        background-color: #22242B; }
+        .inFuture .inFutureButtons div:active {
+          background-color: white;
+          color: black; } }
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden; }
+  #focus {
+    display: none; }
+  #camera {
+    display: none; }
+  .links {
+    display: none; }
+  #videoBG {
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 110vh;
+    z-index: -3; }
+  .bgWhiten {
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 110vh;
+    z-index: -2; }
+  #focusTablet {
+    display: none; }
+  #focusMobile {
+    position: absolute;
+    z-index: -1; }
+    #focusMobile svg {
+      height: 100%; }
+  #cameraMobile {
+    position: absolute;
+    width: 20%;
+    right: 50%;
+    top: 35%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
+  .infoSection {
+    height: 50vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+    .infoSection .logo h1 {
+      font-family: 'PT Mono';
+      font-size: 80pt;
+      color: white; }
+    .infoSection .logo h2 {
+      font-family: 'PT Mono';
+      font-size: 10pt;
+      color: white;
+      padding-top: 30px; }
+    .infoSection .logo .linksMobile {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 10px; }
+      .infoSection .logo .linksMobile span {
+        font-family: 'PT Mono';
+        font-size: 16pt;
+        text-decoration: underline;
+        color: white;
+        padding: 5px 15px;
+        line-height: 30pt; }
+        .infoSection .logo .linksMobile span:hover {
+          text-decoration: none; }
+        .infoSection .logo .linksMobile span a {
+          color: white; }
+          .infoSection .logo .linksMobile span a:hover {
+            text-decoration: none; }
+          .infoSection .logo .linksMobile span a:visited {
+            color: white; }
+  .inFuture {
+    margin: 70% auto 20% auto;
+    width: 90vw;
+    font-family: 'PT Mono'; }
+    .inFuture h2 {
+      font-size: 16pt; }
+    .inFuture h1 {
+      margin-top: 10px;
+      font-size: 24pt;
+      margin-bottom: 5px; }
+    .inFuture p {
+      margin-top: 20px;
+      font-size: 12pt; }
+    .inFuture h3 {
+      margin-top: 10px;
+      font-size: 14pt; }
+    .inFuture .inFutureDates {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .inFuture .inFutureDates span {
+        font-size: 16pt; }
+    .inFuture .inFutureButtons {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 40px; }
+      .inFuture .inFutureButtons a {
+        text-decoration: none; }
+      .inFuture .inFutureButtons div {
+        font-size: 12pt;
+        padding: 10px 20px;
+        border: 3px solid #22242B;
+        border-radius: 100px;
+        color: white;
+        background-color: #22242B; }
+        .inFuture .inFutureButtons div:active {
+          background-color: white;
+          color: black; } }

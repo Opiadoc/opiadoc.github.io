@@ -1,6 +1,5 @@
 @import "reset";
 @import "desktop-xl";
 @import "desktop";
-body{
-  overflow: hidden;
-}
+@import "tablet";
+@import "mobile";

@@ -1,0 +1,145 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+      overflow-x: hidden;
+  }
+  #focus{
+    display: none;
+  }
+  #camera{
+    display: none;
+  }
+  .links{
+    display: none;
+  }
+  #videoBG{
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 110vh;
+    z-index: -3;
+  }
+  .bgWhiten{
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    height: 110vh;
+    z-index: -2;
+  }
+  #focusTablet{
+    position: absolute;
+    z-index: -1;
+    svg{
+      height: 100%;
+    }
+  }
+  #focusMobile{
+    display: none;
+  }
+  #cameraMobile{
+    position: absolute;
+    width: 20%;
+    right: 50%;
+    top: 25%;
+    transform: translateX(50%);
+  }
+  .infoSection{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    .logo{
+      h1{
+        font-family: 'PT Mono';
+        font-size: 100pt;
+        color: white;
+      }
+      h2{
+        font-family: 'PT Mono';
+        font-size: 12pt;
+        color: white;
+        padding-top: 30px;
+      }
+      .linksMobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        span{
+          font-family: 'PT Mono';
+          font-size: 20pt;
+          text-decoration: underline;
+          color: white;
+          padding: 5px 15px;
+          line-height: 30pt;
+          &:hover{
+            text-decoration: none;
+          }
+          a{
+            color: white;
+            &:hover{
+              text-decoration: none;
+            }
+            &:visited{
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .inFuture{
+    margin: 50% auto 20% auto;
+    width: 60vw;
+    font-family: 'PT Mono';
+    h2{
+      font-size: 18pt;
+    }
+    h1{
+      margin-top: 10px;
+      font-size: 36pt;
+      margin-bottom: 5px;
+    }
+    p{
+      margin-top: 20px;
+      font-size: 14pt;
+    }
+    h3{
+      margin-top: 10px;
+      font-size: 16pt;
+    }
+    .inFutureDates{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      span{
+        font-size: 22pt;
+      }
+    }
+    .inFutureButtons{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      a{
+        text-decoration: none;
+      }
+      div{
+        font-size: 16pt;
+        padding: 20px 40px;
+        border: 3px solid $blackBG;
+        border-radius: 100px;
+        color: white;
+        background-color: $blackBG;
+        &:active{
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
