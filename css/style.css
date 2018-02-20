@@ -113,6 +113,7 @@ table {
       display: none; }
     .rowXHead #videoBG {
       left: 40%;
+      width: 100%;
       height: 100vh;
       position: absolute;
       z-index: -4; }
@@ -532,7 +533,8 @@ table {
     .rowXHead #focusTab {
       display: none; }
     .rowXHead #videoBG {
-      left: 30%;
+      left: 40%;
+      width: 100%;
       height: 100vh;
       position: absolute;
       z-index: -4; }
