@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script type="text/javascript" src="js/jquery.vide.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
@@ -13,6 +15,7 @@
 </head>
 <body>
   <div class="mainWrapperDesktop">
+    <div id="top"></div>
     <div class="bgHolder"></div>
     <div class="bgWhiten"></div>
     <div class="rowXHead">
@@ -71,11 +74,10 @@
           <a href="https://opia.timepad.ru/event/665731/" target="_blank"><div class="register">Регистрация</div></a>
         </div>
       </div>
-      <p id="pochta">opia.club.hse@gmail.com</p>
     </div>
   </div>
   <div class="aboutUs" id="aboutUs">
-    <div class="rowX whoIs">
+    <div class="rowX whoIs" data-aos="fade-up">
       <h2>Кто мы?</h2>
       <div class="whoIsBlock">
         <p><span>OPIA</span>* - клуб документального кино, созданный студентами программы Медиакоммуникации весной 2017 года. Вот уже почти год мы смотрим и обсуждаем неигровое кино с нашими зрителями и экспертами, так же влюбленными в документалистику, как и мы. Каждый фильм не похож на предыдущий, но все они непременно меняют в нас нечто неуловимое. Как взгляд вскользь, сквозь. Такова задумка документалистики.</p>
@@ -87,7 +89,7 @@
         <h1>2017</h1>
       </div>
     </div>
-    <div class="rowX results">
+    <div class="rowX results" data-aos="fade-up">
       <div class="resultsCard">
         <h1>8 фильмов</h1>
         <div class="lineBlack"></div>
@@ -114,7 +116,7 @@
         <h1>Показы</h1>
       </div>
     </div>
-    <div class="rowX sliderShows">
+    <div class="rowX sliderShowsDesktop">
       <div class="container">
         <div class="row">
           <div class="carousel slide" id="showsSlider" data-ride="carousel" data-interval="false">
@@ -153,7 +155,7 @@
                     </h1>
                     <p>Фильм Ерастова рассказывает о военных действиях в аэропорту Донбасса и показывает конфликт по обе стороны баррикад. </p>
 
-                    <h1 style="margin-top: 70px;">
+                    <h1 style="margin-top: 20px;">
                       «Два детства» <br> Россия, 2015 <br>
                       Режиссер: Владимир Головнёв
                     </h1>
@@ -265,13 +267,83 @@
         </div>
       </div>
     </div>
+    <div class="rowX sliderShowsMobile">
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Сон Му – это я» <br> США, 2015</h1>
+          <h2>Режиссер: Адам Хьёберг</h2>
+          <p>«Сон Му — это я» — документальный фильм о северокорейском художнике, который работал в отделе пропаганды Корейской народной армии, но потом бежал из родной страны в Китай.</p>
+          <p>Нашим специальный гостем был Алексей Кириллович Симонов— советский и российский писатель и кинорежиссер. </p>
+        </div>
+        <div class="sliderImage" id="sonMu"></div>
+      </div>
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Аэропорт Донецк» <br> Чехия, 2015</h1>
+          <h2>Режиссер: Андрей Ерастов</h2>
+          <p>Фильм Ерастова рассказывает о военных действиях в аэропорту Донбасса и показывает конфликт по обе стороны баррикад.</p>
+          <h1 style="margin-top: 30px;">«Два детства» <br> Россия, 2015</h1>
+          <h2>Режиссер: Владимир Головнёв </h2>
+          <p>Фильм-наблюдение Головнёва рассказывает о природе ложного патриотизма. Главные герои картины – старшеклассники в преддверии праздника Победы. </p>
+          <p>В обсуждении участвовал режиссер Андрей Ерастов. Он вышел с нами на связь по скайпу и ответил на вопросы аудитории о съемках в горячей точке. </p>
+        </div>
+        <div class="sliderImage" id="doneck"></div>
+      </div>
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Чужая работа» <br> Россия, 2015 </h1>
+          <h2>Режиссер: Денис Шабаев </h2>
+          <p>Главный герой фильма – гастарбайтер из Таджикистана, Фаррух. Чтобы заработать на жизнь себе и своей семье, он рискует потерять практически всё и остаться в большой негостеприимной Москве на грани нищеты. </p>
+          <p>После просмотра состоялась встреча с режиссером фильма Денисом Шабаевым.  </p>
+          <div>Коллеги из FSSNews <a href="">написали отзыв и взяли интервью</a> у Дениса Шабаева.</div>
+        </div>
+        <div class="sliderImage" id="work"></div>
+      </div>
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Сила мечты» <br> Франция, 2017</h1>
+          <h2>Режиссер: Эмануэль Амон</h2>
+          <p>Картина рассказывает об Октябрьской революции через кинематографические образы, созданные очевидцами: Владимиром Маяковским, Львом Кулешовым и Сергеем Эйзенштейнейном.</p>
+          <p>Гостями показа стали режиссер Сергей Качкин, принимавший участие в создании картины, и культуролог Александр Михайлов. На связь по скайпу также вышел сценарист фильма Томас Чейсон. </p>
+        </div>
+        <div class="sliderImage" id="power"></div>
+      </div>
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Завтра» <br> Россия, 2012</h1>
+          <h2>Режиссер: Андрей Грязев </h2>
+          <p>Фильм показывает участников арт-группы «Война», которые занимались протестным политическим искусством. Режиссер прожил со своими героями полтора года, и его камера фиксировала не только акции, которые становились все более агрессивными, но и повседневность людей, идейно отрицающих все элементы государства, в том числе деньги. </p>
+          <p>После показа режиссер Андрей Грязев фильма ответил на вопросы зрителей о том, как снималось это кино. </p>
+        </div>
+        <div class="sliderImage" id="war"></div>
+      </div>
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Нестихийное бедствие Китая: Слезы провинции Сычуань» <br> США, 2009</h1>
+          <h2>Режиссер: Джон Алперт </h2>
+          <p>В фильме рассказывается о землетрясении в Китае в 2008 году. Бедствие унесло жизни 70 000 человек, каждый седьмой из которых был ребёнком. В тот год тысячи семей потеряли своих единственных детей.</p>
+          <p>После показа прошла дискуссия с режиссёром фильма Джоном Алпертом. </p>
+        </div>
+        <div class="sliderImage" id="tears"></div>
+      </div>
+      <div class="sliderItem" data-aos="fade-up">
+        <div class="sliderText">
+          <h1>«Вавилонские мечтатели» <br> Израиль, 2016</h1>
+          <h2>Режиссер: Роман Шумунов</h2>
+          <p>Молодая команда танцоров из отдаленных районов Израиля, которая состоит из детей советских иммигрантов, пытается выиграть Международный чемпионат по брейк-дансу. Победить в этом конкурсе – их мечта, путь к которой преграждают конфликты и переживания. Герои принимают удары судьбы один за другим, потому что отчаяние – слишком большая роскошь. </p>
+          <p>После показа было проведено прямое включение с режиссёром Романом Шумуновым по скайпу. </p>
+        </div>
+        <div class="sliderImage" id="dreamers"></div>
+      </div>
+      </div>
+    </div>
     <div class="wrapperBlack">
       <div class="rowX heading comments">
         <h1>Гости о нас</h1>
       </div>
     </div>
-    <div class="rowX comments comments">
-      <div class="commentBlock">
+    <div class="rowX comments">
+      <div class="commentBlock" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
         <div class="commentSection">
           <div class="commentText">
@@ -285,7 +357,7 @@
         </div>
       </div>
 
-      <div class="commentBlock">
+      <div class="commentBlock" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
         <div class="commentSection">
           <div class="commentText">
@@ -300,7 +372,7 @@
         </div>
       </div>
 
-      <div class="commentBlock">
+      <div class="commentBlock" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
         <div class="commentSection">
           <div class="commentText">
@@ -309,12 +381,12 @@
           <div class="commentAuthor">
             <img src="img/maria.jpg" alt="">
             <h1>Мария</h1>
-            <h2>Студент НИУ ВШЭ</h2>
+            <h2>Студентка НИУ ВШЭ</h2>
           </div>
         </div>
       </div>
 
-      <div class="commentBlock">
+      <div class="commentBlock" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
         <div class="commentSection">
           <div class="commentText">
@@ -328,7 +400,7 @@
         </div>
       </div>
 
-      <div class="commentBlock">
+      <div class="commentBlock" data-aos="fade-up">
         <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
         <div class="commentSection">
           <div class="commentText">
@@ -348,7 +420,17 @@
         Показы и обсуждения документальных шедевров мирового и отечественного кинематографа.</h2>
       </div>
     </div>
+    <div class="linkBottom">
+      <a href="https://vk.com/opia_doc_hse" target="_blank">ВК</a>
+      <a href="https://www.facebook.com/opia.doc.hse/" target="_blank">ФБ</a>
+      <a href="https://www.instagram.com/opia_doc_hse/" target="_blank">ИНСТА</a>
+      <a href="#top">НАВЕРХ</a>
+    </div>
+    <p id="pochta">opia.club.hse@gmail.com</p2
   </div>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
  
