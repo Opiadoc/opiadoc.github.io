@@ -112,8 +112,8 @@ table {
     .rowXHead #focusTab {
       display: none; }
     .rowXHead #videoBG {
-      left: 40%;
-      width: 130%;
+      left: 40vw;
+      width: 60vw;
       height: 100vh;
       position: absolute;
       z-index: -4; }
