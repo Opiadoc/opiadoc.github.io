@@ -6,5 +6,9 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes bgChange {
+    0% {background-color: black; color: white;}
+    100% {border: solid 2px white; background-color: white; color: black;}
+}
 
 $blackBG: #22242B;
