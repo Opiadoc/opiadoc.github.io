@@ -11,6 +11,7 @@
   <script type="text/javascript" src="js/jquery.vide.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/smooth.js"></script>
   <title>OPIA DOC HSE</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
         </div>
         <img id="camera" src="img/camera.svg" alt="">
         <div class="links">
-          <span><a href="#aboutUs">Про клуб</a></span><br>
+          <span><a data-scroll href="#aboutUs">Про клуб</a></span><br>
           <!-- <span id="guests">Гости</span> -->
           <span><a href="https://vk.com/opia_doc_hse" target="_blank">ВК</a></span>
           <span><a href="https://www.facebook.com/opia.doc.hse/" target="_blank">ФБ</a></span>
@@ -424,12 +425,15 @@
       <a href="https://vk.com/opia_doc_hse" target="_blank">ВК</a>
       <a href="https://www.facebook.com/opia.doc.hse/" target="_blank">ФБ</a>
       <a href="https://www.instagram.com/opia_doc_hse/" target="_blank">ИНСТА</a>
-      <a href="#top">НАВЕРХ</a>
+      <a data-scroll href="#top">НАВЕРХ</a>
     </div>
     <p id="pochta">opia.club.hse@gmail.com <br><br> Designed and developed by <a href="t.me/Almosov" target="_blank">Anton Almosov</a> in 2018</p>
   </div>
   <script>
     AOS.init();
+  </script>
+  <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 </body>
 </html>
