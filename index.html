@@ -54,15 +54,15 @@
           <span><a href="https://www.instagram.com/opia_doc_hse/" target="_blank">ИНСТА</a></span>
         </div>
       </div>
-      <img id="cameraMobile" src="img/cameraHandless.svg" alt="">
-      <img id="videoBG" src="img/bg2.gif" alt="">
+      <!-- <img id="cameraMobile" src="img/cameraHandless.svg" alt=""> -->
+      <!-- <img id="videoBG" src="img/bg2.gif" alt=""> -->
       <div class="videoholder"></div><img id="videoHolder" src="bg.png" alt="">
       <!-- <div id="videoBG" data-vide-bg="img/bg.mp4" data-vide-options="loop: true, muted: true"></div> -->
-      <!-- <video id="videoBG" loop autoplay muted poster="img/bg.png" width="60%" height="100vh">
+      <video id="videoBG" loop autoplay muted poster="img/bg.png">
     		<source src="img/bg.mp4" type="video/mp4">
     		<source src="img/bg.webm" type="video/webm">
     		<source src="img/bg.ogv" type="video/ogg">
-    	</video> -->
+    	</video>
       <div class="inFuture">
         <h2>Ближайший показ</h2>
         <h1>Косово: Долина</h1>
@@ -274,73 +274,82 @@
       </div>
     </div>
     <div class="rowX sliderShowsMobile">
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Сон Му – это я» <br> США, 2015</h1>
-          <h2>Режиссер: Адам Хьёберг</h2>
-          <p>«Сон Му — это я» — документальный фильм о северокорейском художнике, который работал в отделе пропаганды Корейской народной армии, но потом бежал из родной страны в Китай.</p>
-          <p>Нашим специальный гостем был Алексей Кириллович Симонов— советский и российский писатель и кинорежиссер. </p>
+      <div class="container">
+        <div class="row">
+          <div class="carousel slide" id="showsSliderMob" data-ride="carousel" data-interval="false">
+
+            <ol class="carousel-indicators">
+              <li data-target="#showsSliderMob" data-slide-to="0" class="active"></li>
+              <li data-target="#showsSliderMob" data-slide-to="1"></li>
+              <li data-target="#showsSliderMob" data-slide-to="2"></li>
+              <li data-target="#showsSliderMob" data-slide-to="3"></li>
+              <li data-target="#showsSliderMob" data-slide-to="4"></li>
+              <li data-target="#showsSliderMob" data-slide-to="5"></li>
+              <li data-target="#showsSliderMob" data-slide-to="6"></li>
+              <li data-target="#showsSliderMob" data-slide-to="7"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="sonMu"></div>
+                </div>
+              </div>
+
+              <div class="carousel-item active">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="work">1</div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="doneck">2</div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="perm">3</div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="tears">4</div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="power">5</div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="war">6</div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="sliderItem">
+                  <div class="sliderImage" id="dreamers">7</div>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#showsSliderMob" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#showsSliderMob" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
         </div>
-        <div class="sliderImage" id="sonMu"></div>
-      </div>
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Аэропорт Донецк» <br> Чехия, 2015</h1>
-          <h2>Режиссер: Андрей Ерастов</h2>
-          <p>Фильм Ерастова рассказывает о военных действиях в аэропорту Донбасса и показывает конфликт по обе стороны баррикад.</p>
-          <h1 style="margin-top: 30px;">«Два детства» <br> Россия, 2015</h1>
-          <h2>Режиссер: Владимир Головнёв </h2>
-          <p>Фильм-наблюдение Головнёва рассказывает о природе ложного патриотизма. Главные герои картины – старшеклассники в преддверии праздника Победы. </p>
-          <p>В обсуждении участвовал режиссер Андрей Ерастов. Он вышел с нами на связь по скайпу и ответил на вопросы аудитории о съемках в горячей точке. </p>
-        </div>
-        <div class="sliderImage" id="doneck"></div>
-      </div>
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Чужая работа» <br> Россия, 2015 </h1>
-          <h2>Режиссер: Денис Шабаев </h2>
-          <p>Главный герой фильма – гастарбайтер из Таджикистана, Фаррух. Чтобы заработать на жизнь себе и своей семье, он рискует потерять практически всё и остаться в большой негостеприимной Москве на грани нищеты. </p>
-          <p>После просмотра состоялась встреча с режиссером фильма Денисом Шабаевым.  </p>
-          <div>Коллеги из FSSNews <a href="">написали отзыв и взяли интервью</a> у Дениса Шабаева.</div>
-        </div>
-        <div class="sliderImage" id="work"></div>
-      </div>
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Сила мечты» <br> Франция, 2017</h1>
-          <h2>Режиссер: Эмануэль Амон</h2>
-          <p>Картина рассказывает об Октябрьской революции через кинематографические образы, созданные очевидцами: Владимиром Маяковским, Львом Кулешовым и Сергеем Эйзенштейнейном.</p>
-          <p>Гостями показа стали режиссер Сергей Качкин, принимавший участие в создании картины, и культуролог Александр Михайлов. На связь по скайпу также вышел сценарист фильма Томас Чейсон. </p>
-        </div>
-        <div class="sliderImage" id="power"></div>
-      </div>
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Завтра» <br> Россия, 2012</h1>
-          <h2>Режиссер: Андрей Грязев </h2>
-          <p>Фильм показывает участников арт-группы «Война», которые занимались протестным политическим искусством. Режиссер прожил со своими героями полтора года, и его камера фиксировала не только акции, которые становились все более агрессивными, но и повседневность людей, идейно отрицающих все элементы государства, в том числе деньги. </p>
-          <p>После показа режиссер Андрей Грязев фильма ответил на вопросы зрителей о том, как снималось это кино. </p>
-        </div>
-        <div class="sliderImage" id="war"></div>
-      </div>
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Нестихийное бедствие Китая: Слезы провинции Сычуань» <br> США, 2009</h1>
-          <h2>Режиссер: Джон Алперт </h2>
-          <p>В фильме рассказывается о землетрясении в Китае в 2008 году. Бедствие унесло жизни 70 000 человек, каждый седьмой из которых был ребёнком. В тот год тысячи семей потеряли своих единственных детей.</p>
-          <p>После показа прошла дискуссия с режиссёром фильма Джоном Алпертом. </p>
-        </div>
-        <div class="sliderImage" id="tears"></div>
-      </div>
-      <div class="sliderItem" data-aos="fade-up">
-        <div class="sliderText">
-          <h1>«Вавилонские мечтатели» <br> Израиль, 2016</h1>
-          <h2>Режиссер: Роман Шумунов</h2>
-          <p>Молодая команда танцоров из отдаленных районов Израиля, которая состоит из детей советских иммигрантов, пытается выиграть Международный чемпионат по брейк-дансу. Победить в этом конкурсе – их мечта, путь к которой преграждают конфликты и переживания. Герои принимают удары судьбы один за другим, потому что отчаяние – слишком большая роскошь. </p>
-          <p>После показа было проведено прямое включение с режиссёром Романом Шумуновым по скайпу. </p>
-        </div>
-        <div class="sliderImage" id="dreamers"></div>
-      </div>
       </div>
     </div>
     <div class="wrapperBlack">
@@ -374,48 +383,6 @@
             <img src="img/sirgay.jpg" alt="">
             <h1>Сергей Качкин</h1>
             <h2>Режисер</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="commentBlock" data-aos="fade-up">
-        <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
-        <div class="commentSection">
-          <div class="commentText">
-            <p>До Вышки я совсем не разбиралась в документальном кино, думала, что это все скучно и, в основном, про Дискавери. Но с началом работы «OPIA», после первого показа и обсуждения (на который я пришла из интереса к тому, чем занимаются однокурсники) я была в восторге и наконец-то начала понимать, в чем фишка этого жанра. Я стараюсь посещать все показы, потому что каждый из них уникален и позволяет не только увидеть фильм, который, как правило, недоступен обычному зрителю, но и обсудить его (и тему) со специалистами и/или даже его создателями. Я рада, что у нас в универе есть такой проект и надеюсь, что он будет развиваться и дальше, потому что без него «студенческая жизнь» была бы явно менее интересной! </p>
-          </div>
-          <div class="commentAuthor">
-            <img src="img/maria.jpg" alt="">
-            <h1>Мария</h1>
-            <h2>Студентка НИУ ВШЭ</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="commentBlock" data-aos="fade-up">
-        <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
-        <div class="commentSection">
-          <div class="commentText">
-            <p>Хочу сказать, что, на самом деле, когда я пришел к вам в первый раз, я не ожидал, что будет так интересно! Если честно, я очень рад, что благодаря вашему киноклубу имею возможность посмотреть фильмы, которые я больше нигде не увижу, что я могу увидеть вживую их режиссеров и даже задать им вопрос. Я стараюсь ходить на каждый ваш показ, потому что это дико интересно, и я надеюсь, что в дальнейшем вы будете развиваться и идти только вперед!</p>
-          </div>
-          <div class="commentAuthor">
-            <img src="img/daunil.jpg" alt="">
-            <h1>Данил</h1>
-            <h2>Студент НИУ ВШЭ</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="commentBlock" data-aos="fade-up">
-        <svg width="37px" height="31px" viewBox="0 0 37 31"> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g transform="translate(-701.000000, -4615.000000)" fill="#000000"> <g transform="translate(701.000000, 4615.000000)"> <path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path> <path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path> </g> </g> </g> </svg>
-        <div class="commentSection">
-          <div class="commentText">
-            <p>Я был в Опии всего один раз, но могу сказать, что это был один из самых запоминающихся показов документального кино, на котором мне удалось присутствовать. У ребят отличный репертуар, есть возможность задать вопросы режиссеру, а главное — это совершенно бесплатно. Больше всего меня удивил тот факт, что киноклубу удалось привлечь Джона Алперта. Надеюсь, ребята продолжат развиваться в выбранном направлении!</p>
-          </div>
-          <div class="commentAuthor">
-            <img src="img/pavel.jpg" alt="">
-            <h1>Павел</h1>
-            <h2>Студент ВГИКа</h2>
           </div>
         </div>
       </div>

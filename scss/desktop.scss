@@ -20,7 +20,7 @@
       height: 100%;
       background-color: $blackBG;
       position: absolute;
-      z-index: -2;
+      z-index: 22;
     }
     .bgWhiten{
       width: 100vw;
@@ -28,7 +28,7 @@
       background-color: white;
       opacity: 0.4;
       position: absolute;
-      z-index: -3;
+      z-index: 11;
     }
     .rowXHead{
       margin: auto;
@@ -38,31 +38,33 @@
       #focus{
         height: 100vh;
         position: absolute;
-        z-index: -1;
+        z-index: 21;
       }
       #focusTab{
         display: none;
       }
       #videoBG{
-        left: 40%;
-        width: 100%;
-        height: 100vh;
+
+        min-height: 100vh;
         position: absolute;
-        z-index: -4;
+        right: 0;
+        z-index: 10;
       }
-      #videoHolder{
-        display: none;
+      #videoholder{
+        background-image: url(../img/bg.png);
+        background-size: cover;
         left: 40%;
         width: 60%;
         height: 100vh;
         position: absolute;
-        z-index: -3;
+        z-index: -4;
       }
     }
     #cameraMobile{
       display: none;
     }
     .infoSection{
+      z-index: 23;
       width: 400px;
       height: 100vh;
       display: flex;
@@ -116,24 +118,25 @@
       display: none;
     }
     .inFuture{
+      z-index: 12;
       position: relative;
       height: 100vh;
-      width: 450px;
+      width: 390px;
       margin-left: 250px;
       display: flex;
       justify-content: center;
       flex-flow: column;
       font-family: 'PT Mono';
         h3{
-          font-size: 16pt;
+          font-size: 14pt;
           margin-top: 10px;
         }
         h2{
-          font-size: 18pt;
+          font-size: 16pt;
           margin-bottom: 10px;
         }
         h1{
-          font-size: 36pt;
+          font-size: 30pt;
           margin-top: 10px;
           margin-bottom: 5px;
         }
@@ -145,9 +148,10 @@
         .inFutureDates{
           display: flex;
           justify-content: space-between;
+          width: 90%;
           margin-top: 10px;
           span{
-            font-size: 24pt;
+            font-size: 18pt;
           }
         }
         .inFutureButtons{
