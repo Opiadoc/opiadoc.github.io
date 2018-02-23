@@ -48,6 +48,7 @@
         height: 100vh;
         position: absolute;
         right: 0;
+        top:0;
         z-index: 10;
       }
       #videoHolder{
@@ -266,82 +267,105 @@
         }
       }
     }
-    .sliderShowsMobile{
-      display: none;
-    }
-    .sliderShowsDesktop{
-      padding: 40px 0 150px 0;
+    .sliderShows{
+      padding: 60px 0 150px 0;
       display: flex;
       justify-content: center;
-      #showsSlider{
-        #sliderItem{
-          width: 80%;
-          margin: auto;
+      width: 100%;
+      .sliderItem{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        .sliderText{
+          width: 40%;
           font-family: 'PT Mono';
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .sliderText{
-            width: 40%;
-            h1{
-              font-size: 18pt;
-              margin-bottom: 30px;
-              line-height: 1.2;
-            }
-            p{
-              font-size: 12pt;
-              margin-bottom: 15px;
-              line-height: 1.3;
-            }
-            div{
-              font-size: 12pt;
-              margin-top: 50px;
-              a{
-                text-decoration: none;
+          h1{
+            font-size: 22pt;
+            line-height: 1.2;
+          }
+          h2{
+            font-size: 18pt;
+            margin-top: 10px;
+            margin-bottom: 20px;
+          }
+          p{
+            margin-top: 20px;
+            font-size: 12pt;
+            line-height: 1.3;
+          }
+          div{
+            margin-top: 40px;
+            font-size: 12pt;
+            a{
+              color: orange;
+              text-decoration: none;
+              &:hover{
                 color: orange;
-                &:hover{
-                  color: orange;
-                }
-                &:visited{
-                  color: orange;
-                }
+                text-decoration: underline;
               }
             }
           }
-          .sliderImage{
-            height: 800px;
-            width: 50%;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
+        }
+
+        .sliderImage{
+          width: 50%;
+          height: 700px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        #sonMu{
+          background-image: url(../img/slider/sonMu.jpg);
+        }
+        #work{
+          background-image: url(../img/slider/work.jpg);
+        }
+        #doneck{
+          background-image: url(../img/slider/doneck.jpg);
+        }
+        #perm{
+          background-image: url(../img/slider/perm.jpg);
+        }
+        #tears{
+          background-image: url(../img/slider/tears.jpg);
+        }
+        #power{
+          background-image: url(../img/slider/power.jpg);
+        }
+        #war{
+          background-image: url(../img/slider/war.jpg);
+        }
+        #dreamers{
+          background-image: url(../img/slider/dreamers.jpg);
+        }
+
+      }
+      .controls{
+        width: 80%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+      }
+      .arrow{
+        img{
+          max-height: 50px;
+          max-width: 50px;
+          &:hover{
+            transform: scale(1.2);
           }
-          #sonMu{
-            background-image: url(../img/slider/sonMu.jpg);
-          }
-          #work{
-            background-image: url(../img/slider/work.jpg);
-          }
-          #doneck{
-            background-image: url(../img/slider/doneck.jpg);
-          }
-          #perm{
-            background-image: url(../img/slider/perm.jpg);
-          }
-          #tears{
-            background-image: url(../img/slider/tears.jpg);
-          }
-          #power{
-            background-image: url(../img/slider/power.jpg);
-          }
-          #war{
-            background-image: url(../img/slider/war.jpg);
-          }
-          #dreamers{
-            background-image: url(../img/slider/dreamers.jpg);
+          &:active{
+            transform: scale(1.1);
           }
         }
       }
     }
+
     .comments{
       padding: 50px 0;
       width: 1280px;
@@ -392,6 +416,7 @@
       margin: 40px auto;
       display: flex;
       justify-content: space-between;
+      font-family: 'PT Mono';
       a{
         color: black;
         text-decoration: underline;

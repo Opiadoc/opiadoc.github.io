@@ -3,7 +3,7 @@
       overflow-x: hidden;
   }
   .mainWrapperDesktop{
-    height: 1300px;
+    height: 1500px;
   }
   #focus{
     display: none;
@@ -135,7 +135,8 @@
       margin-top: 30px;
       span{
         padding: 0 20px;
-        font-size: 18pt;
+        font-size: 16pt;
+        line-height: 1.5;
       }
     }
     .inFutureButtons{
@@ -255,60 +256,80 @@
       }
     }
   }
-  .sliderShowsDesktop{
-    display: none;
-  }
-  .sliderShowsMobile{
-    padding: 40px 0 70px 0;
-    display: flex;
-    justify-content: center;
-    .container{
-      .row{
 
+  .sliderShows{
+    padding: 60px 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .sliderItem{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .sliderText{
+        display: none;
       }
+
+      .sliderImage{
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      #sonMu{
+        background-image: url(../img/slider/sonMu.jpg);
+      }
+      #work{
+        background-image: url(../img/slider/work.jpg);
+      }
+      #doneck{
+        background-image: url(../img/slider/doneck.jpg);
+      }
+      #perm{
+        background-image: url(../img/slider/perm.jpg);
+      }
+      #tears{
+        background-image: url(../img/slider/tears.jpg);
+      }
+      #power{
+        background-image: url(../img/slider/power.jpg);
+      }
+      #war{
+        background-image: url(../img/slider/war.jpg);
+      }
+      #dreamers{
+        background-image: url(../img/slider/dreamers.jpg);
+      }
+
     }
-    #showsSliderMob{
-      width: 100vw;
-      #sliderItem{
-        width: 90%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .sliderImage{
-          height: 500px;
-          width: 70%;
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-        }
-        #sonMu{
-          background-image: url(../img/slider/sonMu.jpg);
-        }
-        #work{
-          background-image: url(../img/slider/work.jpg);
-        }
-        #doneck{
-          background-image: url(../img/slider/doneck.jpg);
-        }
-        #perm{
-          background-image: url(../img/slider/perm.jpg);
-        }
-        #tears{
-          background-image: url(../img/slider/tears.jpg);
-        }
-        #power{
-          background-image: url(../img/slider/power.jpg);
-        }
-        #war{
-          background-image: url(../img/slider/war.jpg);
-        }
-        #dreamers{
-          background-image: url(../img/slider/dreamers.jpg);
-        }
+    .controls{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      z-index: 2;
+    }
+    .arrow{
+      img{
+        max-height: 30px;
+        max-width: 30px;
+      }
+      &:hover{
+        transform: scale(1.2);
+      }
+      &:active{
+        transform: scale(1.1);
       }
     }
   }
+
   .comments{
     padding: 50px 0;
     display: flex;
@@ -360,6 +381,7 @@
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
+  font-family: 'PT Mono';
   a{
     color: black;
     text-decoration: underline;
