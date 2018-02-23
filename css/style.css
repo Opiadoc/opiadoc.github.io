@@ -244,7 +244,8 @@ table {
           -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
   .aboutUs {
-    width: 100vw; }
+    width: 100vw;
+    display: none; }
   .rowX {
     width: 1280px;
     margin: 0 auto; }
@@ -525,7 +526,8 @@ table {
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   body {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-bottom: -20px; }
   .mainWrapperDesktop {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -696,7 +698,8 @@ table {
           -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
   .aboutUs {
-    width: 100vw; }
+    width: 100vw;
+    display: none; }
   .rowX {
     width: 1000px;
     margin: 0 auto; }

@@ -2,6 +2,7 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
   body{
       overflow-x: hidden;
+      padding-bottom: -20px;
   }
     .mainWrapperDesktop{
       box-sizing: content-box;
@@ -178,6 +179,7 @@
     }
     .aboutUs{
       width: 100vw;
+      display: none;
     }
     .rowX{
       width: 1000px;

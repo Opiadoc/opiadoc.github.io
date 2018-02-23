@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  $("#abUs").on("click",function(){
+    $("#aboutUs").show();
+  });
   let owl = $(".owl-carousel"),
       prev = $("#left")
       next = $("#right")
