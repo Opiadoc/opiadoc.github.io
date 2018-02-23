@@ -6,8 +6,7 @@ $(document).ready(function(){
     items: 1,
     loop: true,
     center: true,
-    next: $("#right"),
-    prev: $("#left")
+    lazyLoad: true,
   });
   $("#left").on("click", ()=>{
     owl.trigger("prev.owl.carousel");
