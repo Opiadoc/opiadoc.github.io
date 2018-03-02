@@ -23,7 +23,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 900px;
+    height: 940px;
     position: absolute;
     top: 400px;
     z-index: 10;
@@ -56,7 +56,7 @@
     position: absolute;
     top: 400px;
     width: 100vw;
-    height: 900px;
+    height: 940px;
     z-index: 11;
   }
 .rowXHead{
@@ -241,6 +241,7 @@
       width: 80%;
       display: inline;
       font-size: 12pt;
+      line-height: 1.3;
       font-family: 'PT Mono';
       color: white;
       margin: 0 auto;
